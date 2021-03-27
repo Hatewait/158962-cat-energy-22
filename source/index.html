@@ -19,11 +19,9 @@
       </button>
 
       <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="" class="main-nav__link">Главная</a>
-          <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
-          <a href="form.html" class="main-nav__link">Подбор программы</a>
-        </li>
+        <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Подбор программы</a></li>
       </ul>
     </nav>
   </div>
@@ -41,29 +39,27 @@
 
   <section class="programs">
     <h2 class="visually-hidden">Описание программ</h2>
-    <article class="program-item">
-      <div class="program-item__container">
-        <img src="img/cat-slim.svg" width="50" height="53" alt="Похудение к лету">
+    <div class="programs__container">
+      <article class="programs__block program-item">
+        <img class="program-item__image" src="img/cat-slim.svg" width="50" height="53" alt="Похудение к лету">
         <h2 class="program-item__title">Похудение</h2>
         <p class="program-item__text">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
           поможет вашему питомцу сбросить лишний вес.
         </p>
         <a href="#" class="program-item__link">каталог slim</a>
-      </div>
-    </article>
+      </article>
 
-    <article class="program-item">
-      <div class="program-item__container">
-        <img src="img/cat-fat.svg" width="67" height="50" alt="Жиробилдинг">
+      <article class="programs__block program-item">
+        <img class="program-item__image" src="img/cat-fat.svg" width="67" height="50" alt="Жиробилдинг">
         <h2 class="program-item__title">Набор массы</h2>
         <p class="program-item__text">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
           необходимые мышцы!
         </p>
         <a href="#" class="program-item__link">каталог pro</a>
-      </div>
-    </article>
+      </article>
+    </div>
   </section>
 
   <section class="about">
@@ -95,7 +91,7 @@
     </div>
   </section>
 
-  <article class="example">
+  <section class="example">
     <div class="example__container">
       <div class="example__description">
         <h2 class="example__heading">Живой пример</h2>
@@ -116,7 +112,7 @@
       </div>
     </div>
 
-    <div class="slider">
+    <div class="example__slider slider">
       <div class="slider__container">
         <div class="slider__slide  slider__slide--fat">
           <img src="img/fat-cat-slide.png" alt="Котяра до липосакции">
@@ -133,11 +129,11 @@
         </div>
       </div>
     </div>
-  </article>
+  </section>
 
-  <article class="contacts">
+  <section class="contacts">
     <div class="contacts__container">
-      <div class="cooperation">
+      <div class="contacts__cooperation cooperation">
         <h3 class="cooperation__heading">приглашаем
           к сотрудничеству дилеров!</h3>
         <p class="cooperation__description">ул. Большая
@@ -146,43 +142,44 @@
       </div>
     </div>
 
-    <div class="map">
-      <img src="img/map-mob.jpg" width="320" height="362" alt="">
+    <div class="contacts__map map">
+      <img class="map__image" src="img/map-mob.jpg" width="320" height="362" alt="Карта компании">
     </div>
-  </article>
+  </section>
 </main>
 
 <footer class="footer">
   <div class="footer__container">
     <a class="logo-text footer__logo">
-      <img src="img/logo-text.svg" width="101" height="18" alt="">
+      <img src="img/logo-text.svg" width="101" height="18" alt="Логотип компании">
     </a>
 
     <ul class="footer__social  social-links">
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">вконтакте</span>
-          <img src="" alt="">
+          <img src="img/vk.svg" width="23" height="13" alt="вконтакте">
         </a>
       </li>
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">инстаграм</span>
-          <img src="" alt="">
+          <img src="img/instagram.svg" width="16" height="16" alt="инстаграм">
         </a>
       </li>
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">фейсбук</span>
-          <img src="" alt="">
+          <img src="img/fb.svg" width="13" height="20" alt="фейсбук">
         </a>
       </li>
     </ul>
 
-    <div class="footer__copyright">
+
+    <a href="https://htmlacademy.ru/" class="footer__copyright">
       <p class="footer__copyright-text">HTML Academy</p>
-      <img class="footer__logo" src="img/logo-html.svg" width="27" height="34" alt="">
-    </div>
+      <img class="footer__logo" src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
+    </a>
   </div>
 </footer>
 

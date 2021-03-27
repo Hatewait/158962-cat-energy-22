@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Подбор программы</title>
+</head>
+<body class="page__body">
+
+<header class="header">
+  <div class="header__container">
+    <a href="index.html" class="header__logo">
+      <img class="header__logo-pic" src="img/header-logo.svg" width="34" height="37" alt="Кэт энерджи»">
+      <img class="header__logo-text logo-text" src="img/header-logo-text.svg" width="101" height="18" alt="Кэт энерджи»"></a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main-page">
+  <div class="promo">
+    <div class="promo__container">
+      <h1 class="promo__heading main-heading">Подбор программы</h1>
+      <p class="promo__description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+    </div>
+  </div>
+
+  <form class="set-form" action="https://echo.htmlacademy.ru" method="get">
+    <div class="set-form__container">
+      <div class="set-form__flex-group">
+        <div class="set-form__pet pet-data">
+          <div class="set-form__group">
+            <label class="set-form__label pet-data__label" for="pet-name">ИМЯ:*</label>
+            <input class="set-form__input pet-data__input" id="pet-name" type="text" placeholder="барсик">
+          </div>
+
+          <div class="set-form__group">
+            <label class="set-form__label pet-data__label" for="weight">Вес (кг):*</label>
+            <input id="weight" class="set-form__input pet-data__input" type="text" placeholder="7">
+          </div>
+
+          <div class="set-form__group">
+            <label class="set-form__label pet-data__label" for="years">Возраст (лет):</label>
+            <input id="years" class="set-form__input pet-data__input" type="text" placeholder="7">
+          </div>
+        </div>
+
+        <div class="set-form__program pet-program">
+          <div class="set-form__group">
+            <input class="set-form__input pet-program__input" id="loose-weight" type="radio" name="variant" value="loose" checked>
+            <label class="set-form__label pet-program__label" for="loose-weight">похудение</label>
+          </div>
+
+          <div class="set-form__group">
+            <input class="set-form__input pet-program__input" id="get-fat" type="radio" name="variant" value="get-fat">
+            <label class="set-form__label pet-program__label" for="get-fat">Набор массы</label>
+          </div>
+
+          <div class="set-form__group">
+            <input class="set-form__input pet-program__input" id="need-help" type="radio" name="variant" value="need-help">
+            <label class="set-form__label pet-program__label" for="need-help">Не знаю (Нужен ваш совет)</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="set-form__comment comment-data">
+        <h2 class="set-form__heading comment-data__heading">Комментарий</h2>
+        <label class="visually-hidden" for="textarea">Комментарий</label>
+        <textarea id="textarea" class="comment-data__textarea" name="textarea-field" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+      </div>
+
+      <div class="set-form__addition addition">
+        <h2 class="set-form__heading addition__heading">Дополнительно</h2>
+        <div class="set-form__group">
+          <input class="set-form__input addition__input" id="sweetener" type="checkbox" name="option" value="sweetener" checked>
+          <label class="set-form__label addition__label" for="sweetener">сахарозаменитель</label>
+        </div>
+
+        <div class="set-form__group">
+          <input class="set-form__input addition__input" id="water" type="checkbox" name="option" value="water">
+          <label class="set-form__label addition__label" for="water">питьевая вода</label>
+        </div>
+
+        <div class="set-form__group">
+          <input class="set-form__input addition__input" id="milk" type="checkbox" name="option" value="milk">
+          <label class="set-form__label addition__label" for="milk">молоко</label>
+        </div>
+
+        <div class="set-form__group">
+          <input class="set-form__input addition__input" id="vitamin" type="checkbox" name="option" value="vitamin">
+          <label class="set-form__label addition__label" for="vitamin">витамины</label>
+        </div>
+      </div>
+
+      <button class="set-form__button button" type="submit">отправить заявку</button>
+      <p class="set-form__reminder">* — Обязательные поля</p>
+
+    </div>
+  </form>
+
+  <section class="contacts contacts--form">
+    <div class="contacts__container">
+      <div class="contacts__cooperation cooperation">
+        <h3 class="cooperation__heading">приглашаем
+          к сотрудничеству дилеров!</h3>
+        <p class="cooperation__description">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+    </div>
+
+    <div class="contacts__map map">
+      <img class="map__image" src="img/map-mob.jpg" width="320" height="362" alt="">
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <a class="logo-text footer__logo">
+      <img src="img/logo-text.svg" width="101" height="18" alt="Логотип компании">
+    </a>
+
+    <ul class="footer__social  social-links">
+      <li class="social-links__item">
+        <a href="" class="social-links__link">
+          <span class="visually-hidden">вконтакте</span>
+          <img src="img/vk.svg" width="23" height="13" alt="вконтакте">
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a href="" class="social-links__link">
+          <span class="visually-hidden">инстаграм</span>
+          <img src="img/instagram.svg" width="16" height="16" alt="инстаграм">
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a href="" class="social-links__link">
+          <span class="visually-hidden">фейсбук</span>
+          <img src="img/fb.svg" width="13" height="20" alt="фейсбук">
+        </a>
+      </li>
+    </ul>
+
+    <a href="https://htmlacademy.ru/" class="footer__copyright">
+      <p class="footer__copyright-text">HTML Academy</p>
+      <img class="footer__logo" src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
+    </a>
+
+  </div>
+</footer>
+</body>
+</html>
