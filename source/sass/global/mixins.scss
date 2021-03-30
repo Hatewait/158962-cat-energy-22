@@ -1,0 +1,35 @@
+// resets
+@mixin listStyleReset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin textStyleReset() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin buttonStyleReset() {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+@mixin baseFontPropertiesWithCustomFont() {
+  font-family: $customFontFamily;
+  font-style: $baseFontStyle;
+  font-weight: $baseFontWeight;
+}
+
+@mixin baseFontPropertiesWithOriginalFont() {
+  font-family: $baseFontFamily;
+  font-style: $baseFontStyle;
+  font-weight: $baseFontWeight;
+}
+
+@mixin pseudoElementBaseStyles() {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+}

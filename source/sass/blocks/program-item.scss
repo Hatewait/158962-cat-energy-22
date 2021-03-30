@@ -1,0 +1,56 @@
+.program-item {
+  position: relative;
+  margin-bottom: 20px;
+  background: #f6f6f6;
+  padding: 30px 52px 22px 91px;
+}
+
+.program-item:last-child {
+  margin-bottom: 0;
+}
+
+.program-item__title {
+  @include baseFontPropertiesWithCustomFont;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+  color: $baseHeadingColor;
+}
+
+.program-item__image {
+  position: absolute;
+  top: 24px;
+  left: 22px;
+
+  &--up-weight {
+    left: 13px;
+  }
+}
+
+.program-item__text {
+  @include baseFontPropertiesWithOriginalFont;
+  margin-bottom: 42px;
+  color: $baseTextColor;
+  font-size: $baseTextFontSize;
+  line-height: $baseTextLineHeight;
+}
+
+.program-item__link {
+  @include baseFontPropertiesWithCustomFont;
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  text-decoration: $linkDecorReset;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $baseHeadingColor;
+}
+
+.program-item__link::before {
+  @include pseudoElementBaseStyles;
+  right: 0;
+  top: 3px;
+  width: 27px;
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='12' viewBox='0 0 24 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
+}

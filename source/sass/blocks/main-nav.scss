@@ -1,0 +1,14 @@
+.main-nav {
+  background-color: $baseBodyColor;
+  margin-bottom: 20px;
+}
+
+.main-nav__list {
+  @include listStyleReset;
+  /*display: none;*/
+}
+
+.main-nav__toggle {
+  @include buttonStyleReset;
+  background: $baseBodyColor;
+}

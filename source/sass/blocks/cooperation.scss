@@ -1,0 +1,23 @@
+.cooperation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.cooperation__heading {
+  @include baseFontPropertiesWithCustomFont;
+  width: 140px;
+  margin: 0;
+  font-size: 16px;
+  line-height: $baseTextLineHeight;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.cooperation__description {
+  @include baseFontPropertiesWithOriginalFont;
+  margin: 0;
+  width: 140px;
+  font-size: $baseTextFontSize;
+  line-height: 20px;
+}

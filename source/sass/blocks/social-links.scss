@@ -1,0 +1,16 @@
+.social-links {
+  @include listStyleReset;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 53px;
+}
+
+.social-links__item {
+  margin-right: 37px;
+}
+
+.social-links__item:last-child {
+  margin-right: 0;
+}

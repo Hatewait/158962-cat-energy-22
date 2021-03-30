@@ -1,0 +1,66 @@
+.example {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  background: $exampleBg;
+}
+
+.example__heading {
+  @include baseFontPropertiesWithCustomFont;
+  margin-bottom: 33px;
+  font-size: $mainHeadingFontSize;
+  line-height: 40px;
+  color: $baseHeadingColor;
+}
+
+.example__description {
+  @include baseFontPropertiesWithOriginalFont;
+  margin-bottom: 25px;
+  font-size: $baseTextFontSize;
+  line-height: $baseTextLineHeight;
+  color: $baseTextColor;
+}
+
+.example__group {
+  display: flex;
+  /*justify-content: center;*/
+}
+
+.example__details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--weight {
+    margin-outside: 95px;
+  }
+}
+
+.example__text {
+  @include baseFontPropertiesWithCustomFont;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $baseHeadingColor;
+  text-transform: uppercase;
+}
+
+.example__details-definition {
+  @include baseFontPropertiesWithOriginalFont;
+  display: inline-block;
+  max-width: 85px;
+  font-size: 12px;
+  line-height: 12px;
+  color: $baseTextColor;
+  text-align: center;
+}
+
+.example__consume {
+  @include baseFontPropertiesWithCustomFont;
+  margin-top: 11px;
+  margin-bottom: 42px;
+  font-size: $baseTextFontSize;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $baseHeadingColor;
+}

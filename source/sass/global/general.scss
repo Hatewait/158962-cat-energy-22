@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: $customFont;
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: $baseBodyColor;
+  font-family: $baseFontFamily;
+  font-size: $baseTextFontSize;
+  line-height: $baseTextLineHeight;
+  font-weight: $baseFontWeight;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 44px;
+  width: 280px;
+  height: 40px;
+  background: $buttonBgColor;
+  font-family: $customFontFamily;
+  font-size: $baseTextFontSize;
+  line-height: $baseTextLineHeight;
+  font-weight: $baseFontWeight;
+  color: $buttonTextColor;
+  text-decoration: $linkDecorReset;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-heading {
+  @include baseFontPropertiesWithCustomFont;
+  margin-top: 27px;
+  margin-bottom: 40px;
+  $mainHeadingFontSize: 36px;
+  $mainHeadingLineHeight: 36px;
+  /* identical to box height, or 100% */
+  color: $baseHeadingColor;
+}

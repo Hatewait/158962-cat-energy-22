@@ -1,0 +1,39 @@
+.slider__slide {
+  margin-bottom: 27px;
+
+  &--slim {
+    display: none;
+  }
+}
+
+.slider__navigation {
+  width: 230px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slider__button {
+  @include buttonStyleReset;
+  @include baseFontPropertiesWithCustomFont;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $baseHeadingColor;
+}
+
+.slider__range {
+  background: $baseBodyColor;
+  padding: 3px 6px 4px 6px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.slider__toggle {
+  width: 35px;
+  height: 6px;
+  background: $buttonBgColor;
+  border-radius: 6px;
+}
