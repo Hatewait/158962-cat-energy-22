@@ -1,0 +1,43 @@
+.product {
+  padding-top: 19px;
+  padding-bottom: 25px;
+}
+
+.product__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.product__title {
+  @include baseFontPropertiesWithCustomFont;
+  max-width: 100px;
+  margin-bottom: 14px;
+  font-size: $mediumFontSize;
+  line-height: $mediumLineHeight;
+  text-transform: uppercase;
+}
+
+.product__image {
+  margin-right: 36px;
+
+  &--pro {
+    margin-right: 28px;
+  }
+}
+
+.product__table {
+  width: 190px;
+}
+
+.product__table tr {
+  width: 100px;
+}
+
+.product__table td {
+  @include baseFontPropertiesWithOriginalFont;
+  font-size: $smallFontSize;
+  line-height: $mediumLineHeight;
+  color: $baseTextColor;
+  text-align: left;
+}
