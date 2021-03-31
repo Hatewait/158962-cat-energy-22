@@ -16,6 +16,8 @@
   background: transparent;
 }
 
+// fonts
+
 @mixin baseFontPropertiesWithCustomFont() {
   font-family: $customFontFamily;
   font-style: $baseFontStyle;
@@ -27,6 +29,8 @@
   font-style: $baseFontStyle;
   font-weight: $baseFontWeight;
 }
+
+// others
 
 @mixin pseudoElementBaseStyles() {
   position: absolute;

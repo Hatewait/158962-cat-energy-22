@@ -10,11 +10,18 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: $baseBodyColor;
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   font-weight: $baseFontWeight;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -32,10 +39,27 @@ body {
   color: $buttonTextColor;
   text-decoration: $linkDecorReset;
   text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background: $buttonBgColorOnHover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &--mode {
     background: #f2f2f2;
     color: $baseTextColor;
+
+    &:hover {
+      background: $buttonModeBgColorOnHover;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
@@ -53,6 +77,5 @@ body {
   margin-bottom: 40px;
   font-size: $mainHeadingFontSize;
   line-height: $mainHeadingLineHeight;
-  /* identical to box height, or 100% */
   color: $baseHeadingColor;
 }

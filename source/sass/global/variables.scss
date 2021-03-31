@@ -3,13 +3,11 @@ $linkDecorReset: none;
 
 // font
 $customFont: "Oswald";
-$customFontFamily: "Oswald", sans-serif;
+$customFontFamily: "Oswald", "Arial", sans-serif;
 $baseFont: "Arial";
 $baseFontFamily: "Arial", sans-serif;
 
 // font properties
-$upperCase: uppercase;
-$lowCase: none;
 $baseFontWeight: normal;
 $baseFontStyle: normal;
 $baseFontSize: 14px;
@@ -22,10 +20,20 @@ $mainHeadingFontSize: 36px;
 $mainHeadingLineHeight: 36px;
 
 // base colors
-$baseBodyColor: #ffffff;
-$buttonBgColor: #68b738;
-$baseHeadingColor: #000000;
+$white: #ffffff;
+$green: #68b738;
+$darkGreen: #5eaa2f;
+$basicGrey: #f2f2f2;
+$grey: #ebebeb;
+$black: #000000;
+$baseBodyColor: $white;
+$buttonBgColor: $green;
+$aboutItem: $green;
+$buttonTextColor: $white;
+$radioInputChecked: $green;
+$decorBgColor: $basicGrey;
+$buttonBgColorOnHover: $darkGreen;
+$buttonModeBgColorOnHover: $grey;
+$baseHeadingColor: $black;
 $baseTextColor: #444444;
-$buttonTextColor: #ffffff;
-$footerBg: #f2f2f2;
 $exampleBg: #eaeaea;
