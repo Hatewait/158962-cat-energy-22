@@ -10,7 +10,7 @@
 .copyright__text {
   @include baseFontPropertiesWithOriginalFont;
   margin-top: 0;
-  font-size: 16px;
-  line-height: $baseTextLineHeight;
+  font-size: $mediumFontSize;
+  line-height: $baseLineHeight;
   color: $baseTextColor;
 }

@@ -9,8 +9,8 @@
 
 .social-links__item {
   margin-right: 37px;
-}
 
-.social-links__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }

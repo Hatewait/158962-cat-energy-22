@@ -21,8 +21,8 @@
   margin-bottom: 26px;
   /*temporary width*/
   max-width: 200px;
-  font-size: $baseTextFontSize;
-  line-height: $baseTextLineHeight;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
   color: $baseTextColor;
 
   &--leaf::after {
@@ -48,23 +48,23 @@
     top: 13px;
     left: 13px;
   }
-}
 
-.about__item:last-child {
-  margin-bottom: 0;
-}
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-.about__item::before {
-  @include pseudoElementBaseStyles;
-  width: 60px;
-  height: 60px;
-  background: #68b738;
-  left: 0;
-  top: 0;
-}
+  &::before {
+    @include pseudoElementBaseStyles;
+    width: 60px;
+    height: 60px;
+    background: #68b738;
+    left: 0;
+    top: 0;
+  }
 
-.about__item::after {
-  @include pseudoElementBaseStyles;
-  width: 30px;
-  height: 30px;
+  &::after {
+    @include pseudoElementBaseStyles;
+    width: 30px;
+    height: 30px;
+  }
 }

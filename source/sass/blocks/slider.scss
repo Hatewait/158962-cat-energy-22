@@ -16,8 +16,8 @@
 .slider__button {
   @include buttonStyleReset;
   @include baseFontPropertiesWithCustomFont;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: $mediumFontSize;
+  line-height: $mediumLineHeight;
   text-transform: uppercase;
   color: $baseHeadingColor;
 }

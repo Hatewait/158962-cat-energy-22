@@ -15,8 +15,8 @@
 .example__description {
   @include baseFontPropertiesWithOriginalFont;
   margin-bottom: 25px;
-  font-size: $baseTextFontSize;
-  line-height: $baseTextLineHeight;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
   color: $baseTextColor;
 }
 
@@ -49,8 +49,8 @@
   @include baseFontPropertiesWithOriginalFont;
   display: inline-block;
   max-width: 85px;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: $smallFontSize;
+  line-height: $smallLineHeight;
   color: $baseTextColor;
   text-align: center;
 }
@@ -59,8 +59,8 @@
   @include baseFontPropertiesWithCustomFont;
   margin-top: 11px;
   margin-bottom: 42px;
-  font-size: $baseTextFontSize;
-  line-height: 20px;
+  font-size: $baseFontSize;
+  line-height: $mediumLineHeight;
   text-transform: uppercase;
   color: $baseHeadingColor;
 }

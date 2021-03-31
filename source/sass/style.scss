@@ -1,7 +1,7 @@
 @import "global/variables";
 @import "global/mixins";
 @import "global/general";
-/*@import "blocks/header";*/
+// @import "blocks/header";
 @import "blocks/main-nav";
 @import "blocks/introduction";
 @import "blocks/programs";
@@ -14,3 +14,8 @@
 @import "blocks/footer";
 @import "blocks/social-links";
 @import "blocks/copyright";
+
+// catalog
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/crossale";

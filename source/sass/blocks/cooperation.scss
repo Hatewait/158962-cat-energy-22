@@ -8,8 +8,8 @@
   @include baseFontPropertiesWithCustomFont;
   width: 140px;
   margin: 0;
-  font-size: 16px;
-  line-height: $baseTextLineHeight;
+  font-size: $mediumFontSize;
+  line-height: $baseLineHeight;
   text-transform: uppercase;
   color: #111111;
 }
@@ -18,6 +18,6 @@
   @include baseFontPropertiesWithOriginalFont;
   margin: 0;
   width: 140px;
-  font-size: $baseTextFontSize;
-  line-height: 20px;
+  font-size: $baseFontSize;
+  line-height: $mediumLineHeight;
 }

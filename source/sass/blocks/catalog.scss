@@ -1,0 +1,24 @@
+.catalog__subtitle {
+  @include baseFontPropertiesWithCustomFont;
+  position: relative;
+  padding-top: 78px;
+  margin-bottom: 8px;
+  font-size: $mediumFontSize;
+  line-height: $mediumLineHeight;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.catalog__text {
+  @include baseFontPropertiesWithOriginalFont;
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: $smallFontSize;
+  color: $baseTextColor;
+  line-height: 16px;
+}
+
+.catalog__all-products {
+  text-decoration: $linkDecorReset;
+  margin-bottom: 25px;
+}

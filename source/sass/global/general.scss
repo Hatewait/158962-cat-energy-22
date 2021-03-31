@@ -12,8 +12,8 @@
 body {
   background-color: $baseBodyColor;
   font-family: $baseFontFamily;
-  font-size: $baseTextFontSize;
-  line-height: $baseTextLineHeight;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
   font-weight: $baseFontWeight;
 }
 
@@ -22,16 +22,21 @@ body {
   justify-content: center;
   align-items: center;
   padding: 8px 44px;
-  width: 280px;
+  width: 279px;
   height: 40px;
   background: $buttonBgColor;
   font-family: $customFontFamily;
-  font-size: $baseTextFontSize;
-  line-height: $baseTextLineHeight;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
   font-weight: $baseFontWeight;
   color: $buttonTextColor;
   text-decoration: $linkDecorReset;
   text-transform: uppercase;
+
+  &--mode {
+    background: #f2f2f2;
+    color: $baseTextColor;
+  }
 }
 
 .visually-hidden {
@@ -46,8 +51,8 @@ body {
   @include baseFontPropertiesWithCustomFont;
   margin-top: 27px;
   margin-bottom: 40px;
-  $mainHeadingFontSize: 36px;
-  $mainHeadingLineHeight: 36px;
+  font-size: $mainHeadingFontSize;
+  line-height: $mainHeadingLineHeight;
   /* identical to box height, or 100% */
   color: $baseHeadingColor;
 }
