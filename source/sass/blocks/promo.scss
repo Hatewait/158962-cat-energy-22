@@ -1,0 +1,8 @@
+.promo__description {
+  @include baseFontPropertiesWithCustomFont;
+  margin-bottom: 39px;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  text-transform: uppercase;
+  color: $baseHeadingColor;
+}
