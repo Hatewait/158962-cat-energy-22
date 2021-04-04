@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* temporary width */
-  width: 280px;
   text-decoration: $linkDecorReset;
+
+  @include tablet {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {
@@ -13,4 +15,9 @@
   font-size: $mediumFontSize;
   line-height: $baseLineHeight;
   color: $baseTextColor;
+
+  @include tablet {
+    margin-right: 22px;
+    margin-bottom: 0;
+  }
 }

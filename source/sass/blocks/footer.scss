@@ -2,3 +2,25 @@
   padding: 40px 0 32px 0;
   background: $decorBgColor;
 }
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    justify-self: start;
+  }
+}
+
+.footer__social {
+  align-self: center;
+}
+
+.footer__container {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+}

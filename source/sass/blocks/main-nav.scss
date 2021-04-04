@@ -1,14 +1,62 @@
 .main-nav {
   background-color: $baseBodyColor;
-  margin-bottom: 20px;
+
+  @include tablet {
+    justify-self: end;
+  }
+
+  @include desktop {
+    background: transparent;
+    position: relative;
+    z-index: 100;
+  }
 }
 
 .main-nav__list {
   @include listStyleReset;
-  /*display: none;*/
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  @include tablet {
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .main-nav__toggle {
   @include buttonStyleReset;
   background: $baseBodyColor;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  @include tablet {
+    @include baseFontPropertiesWithCustomFont;
+    text-decoration: $linkDecorReset;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $black;
+
+    @include desktop {
+      font-size: 20px;
+      line-height: 30px;
+      color: $white;
+    }
+  }
 }

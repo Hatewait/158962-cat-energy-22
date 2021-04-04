@@ -1,8 +1,56 @@
+.slider {
+  @include tablet {
+    min-height: 462px;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .slider__slide {
   margin-bottom: 27px;
 
   &--slim {
     display: none;
+  }
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+
+    &--slim {
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 2000px;
+        right: -1675px;
+        top: -63px;
+        bottom: 0;
+        height: 462px;
+        background: #eaeaea;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.slider__container {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-rows: 1fr;
+    grid-template-columns: 325px 325px;
   }
 }
 
@@ -11,6 +59,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @include tablet {
+    justify-self: center;
+    grid-column: span 2;
+    width: auto;
+  }
+
+  @include desktop {
+    width: 460px;
+    z-index: 1;
+  }
 }
 
 .slider__button {
@@ -29,6 +88,10 @@
   height: 14px;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
+
+  @include tablet {
+    width: 428px;
+  }
 }
 
 .slider__toggle {

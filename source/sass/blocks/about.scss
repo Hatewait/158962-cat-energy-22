@@ -12,6 +12,18 @@
 
 .about__list {
   @include listStyleReset;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 95px;
+  }
 }
 
 .about__item {
@@ -66,5 +78,20 @@
     @include pseudoElementBaseStyles;
     width: 30px;
     height: 30px;
+  }
+
+  @include desktop {
+    min-height: 280px;
+    min-width: 230px;
+    padding-top: 151px;
+    padding-left: 0;
+
+    &::before {
+      top: 24%;
+    }
+
+    &::after {
+      top: 29%;
+    }
   }
 }

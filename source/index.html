@@ -2,15 +2,16 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 
 <header class="header">
-  <div class="header__container">
+  <div class="header__container container">
     <a class="header__logo">
-      <img class="header__logo-pic" src="img/header-logo.svg" width="34" height="37" alt="Кэт энерджи»">
+      <img class="header__logo-pic" src="img/logo-mobile-header.svg" width="33" height="37" alt="Кэт энерджи»">
       <img class="header__logo-text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
     </a>
 
@@ -31,7 +32,7 @@
 
 <main class="main-page">
   <section class="introduction">
-    <div class="introduction__container">
+    <div class="introduction__container container">
       <h1 class="introduction__heading">Функциональное
         питание для котов</h1>
       <p class="introduction__text">Занялся собой? Займись котом!</p>
@@ -42,7 +43,7 @@
 
   <section class="programs">
     <h2 class="visually-hidden">Описание программ</h2>
-    <div class="programs__container">
+    <div class="programs__container container">
       <article class="programs__block program-item">
         <img class="program-item__image" src="img/cat-slim.svg" width="50" height="53" alt="Похудение к лету">
         <h2 class="program-item__title">Похудение</h2>
@@ -66,7 +67,7 @@
   </section>
 
   <section class="about">
-    <div class="about__container">
+    <div class="about__container container">
       <h2 class="about__heading">
         Как это работает
       </h2>
@@ -95,53 +96,54 @@
   </section>
 
   <section class="example">
-    <div class="example__container">
-      <div class="example__description">
-        <h2 class="example__heading">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
+    <div class="example__container container">
+      <h2 class="example__heading">Живой пример</h2>
+      <div class="example__inner">
+        <div class="example__text-wrap">
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__details-wrap">
+            <div class="example__group">
+              <div class="example__details example__details--weight">
+                <p class="example__text">5 КГ</p>
+                <span class="example__details-definition">снижение веса</span>
+              </div>
+              <div class="example__details example__details--days">
+                <p class="example__text">60 ДНЕЙ</p>
+                <span class="example__details-definition">затрачено времени</span>
+              </div>
+            </div>
 
-        <div class="example__group">
-          <div class="example__details example__details--weight">
-            <p class="example__text">5 КГ</p>
-            <span class="example__details-definition">снижение веса</span>
-          </div>
-
-          <div class="example__details example__details--days">
-            <p class="example__text">60 ДНЕЙ</p>
-            <span class="example__details-definition">затрачено времени</span>
+            <p class="example__consume">Затраты на питание: 15 000 РУБ. </p>
           </div>
         </div>
+        <div class="example__slider slider">
+          <div class="slider__container">
+            <div class="slider__slide slider__slide--fat">
+              <img src="img/fat-cat-slide.png" alt="Котяра до липосакции" width="311" height="232">
+            </div>
 
-        <p class="example__consume">Затраты на питание: 15 000 РУБ. </p>
-      </div>
-    </div>
+            <div class="slider__slide slider__slide--slim">
+              <img src="img/slim-cat-slide.png" alt="Котяра после липосакции" width="545" height="520">
+            </div>
 
-    <div class="example__slider slider">
-      <div class="slider__container">
-        <div class="slider__slide slider__slide--fat">
-          <img src="img/fat-cat-slide.png" alt="Котяра до липосакции" width="311" height="232">
-        </div>
-
-        <div class="slider__slide slider__slide--slim">
-          <img src="img/slim-cat-slide.png" alt="Котяра после липосакции" width="545" height="520">
-        </div>
-
-        <div class="slider__navigation">
-          <button type="button" class="slider__button slider__button--before">было</button>
-          <div class="slider__range">
-            <div class="slider__toggle"></div>
+            <div class="slider__navigation">
+              <button type="button" class="slider__button slider__button--before">было</button>
+              <div class="slider__range">
+                <div class="slider__toggle"></div>
+              </div>
+              <button type="button" class="slider__button slider__button--after">стало</button>
+            </div>
           </div>
-          <button type="button" class="slider__button slider__button--after">стало</button>
         </div>
       </div>
     </div>
   </section>
 
   <section class="contacts">
-    <div class="contacts__container">
+    <div class="contacts__container container">
       <div class="contacts__cooperation cooperation">
         <h3 class="cooperation__heading">приглашаем
           к сотрудничеству дилеров!</h3>
@@ -152,13 +154,16 @@
     </div>
 
     <div class="contacts__map map">
-      <img class="map__image" src="img/map-mob.jpg" width="320" height="362" alt="Карта компании">
+      <!--<img class="map__image" src="img/map-mob.jpg" width="320" height="362" alt="Карта компании">-->
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c304294f90e08b870cad431c6566693cd196415c8da2278ce46ace6526a9d8&amp;source=constructor"
+        width="100%" height="400"></iframe>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="footer__container">
+  <div class="footer__container container">
     <a class="logo-text footer__logo">
       <img src="img/logo-text.svg" width="101" height="18" alt="Логотип компании">
     </a>

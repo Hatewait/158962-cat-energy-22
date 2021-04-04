@@ -4,4 +4,21 @@
   &--form {
     background: $decorBgColor;
   }
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.contacts__container {
+  @include tablet {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  @include desktop {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
