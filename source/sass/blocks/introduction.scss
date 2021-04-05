@@ -3,62 +3,26 @@
   padding-top: 27px;
   margin-bottom: 22px;
   min-height: 302px;
-
-  &::after {
-    @include pseudoElementBaseStyles;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 302px;
-    background-image: url("../img/introduction-cat.jpg");
-    z-index: -1;
-    background-size: cover;
-  }
-
-  &::before {
-    @include pseudoElementBaseStyles;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 302px;
-    background: rgba(104, 183, 56, 0.85);
-  }
+  z-index: -1;
+  background-image: url("../img/intro-bg.jpg"), linear-gradient(to right, #ffffff 100%, #5eaa2f 50%);
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0, 0;
+  background-size: contain;
+  background-position: top;
 
   @include tablet {
     background-image: none;
-
-    &::after {
-      display: none;
-    }
-
-    &::before {
-      display: none;
-    }
   }
 
   @include desktop {
 
     margin-bottom: 82px;
-
-    &::after {
-      display: block;
-      top: -77px;
-      left: 50%;
-      width: auto;
-      height: 694px;
-      background-image: url("../img/introduction-cat-desktop.jpg");
-      z-index: -1;
-      right: 0;
-    }
-
-    &::before {
-      display: block;
-      top: -77px;
-      left: 50%;
-      width: 100%;
-      height: 694px;
-      background: rgba(104, 183, 56, 0.85);
-    }
+    background-image: url("../img/intro-bg-desktop.jpg"), linear-gradient(to right, #ffffff 100%, #5eaa2f 50%);
+    background-size: 720px auto;
+    height: 696px;
+    margin-top: -110px;
+    padding-top: 100px;
+    background-position: right;
   }
 }
 

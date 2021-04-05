@@ -122,11 +122,23 @@
         <div class="example__slider slider">
           <div class="slider__container">
             <div class="slider__slide slider__slide--fat">
-              <img src="img/fat-cat-slide.png" alt="Котяра до липосакции" width="311" height="232">
+              <picture>
+                <source media="(min-width:1440px)"
+                        srcset="img/before-desktop-cut.png 1x">
+                <source media="(min-width:768px)"
+                        srcset="img/before-tablet.png 1x">
+                <img src="img/fat-cat-slide.png" alt="Котяра до липосакции">
+              </picture>
             </div>
 
             <div class="slider__slide slider__slide--slim">
-              <img src="img/slim-cat-slide.png" alt="Котяра после липосакции" width="545" height="520">
+              <picture>
+                <source media="(min-width:1440px)"
+                        srcset="img/after-desktop.png 1x">
+                <source media="(min-width:768px)"
+                        srcset="img/after-desktop.png 1x">
+                <img src="img/slim-cat-slide.png" alt="Котяра после липосакции">
+              </picture>
             </div>
 
             <div class="slider__navigation">

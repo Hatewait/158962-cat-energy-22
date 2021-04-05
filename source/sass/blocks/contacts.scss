@@ -14,6 +14,7 @@
   @include tablet {
     padding-bottom: 60px;
     padding-top: 60px;
+    background: $baseBodyColor;
   }
 
   @include desktop {

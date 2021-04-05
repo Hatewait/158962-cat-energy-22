@@ -32,7 +32,7 @@
         content: "";
         width: 2000px;
         right: -1675px;
-        top: -63px;
+        top: 197px;
         bottom: 0;
         height: 462px;
         background: #eaeaea;
@@ -64,11 +64,15 @@
     justify-self: center;
     grid-column: span 2;
     width: auto;
+    position: absolute;
+    bottom: 50px;
   }
 
   @include desktop {
     width: 460px;
     z-index: 1;
+    position: absolute;
+    bottom: 72px;
   }
 }
 
