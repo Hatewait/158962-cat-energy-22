@@ -37,3 +37,45 @@
   content: "";
   background-repeat: no-repeat;
 }
+
+//media queries
+
+@mixin mobile-only {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+// containers
+@mixin container() {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin containerTablet() {
+  position: relative;
+  width: 768px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@mixin containerDesktop() {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 110px;
+}

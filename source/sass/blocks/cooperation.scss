@@ -2,6 +2,25 @@
   display: flex;
   align-items: center;
   margin-bottom: 26px;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    z-index: 1;
+    top: 95px;
+    background: $baseBodyColor;
+    padding-left: 76px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+  }
 }
 
 .cooperation__heading {
@@ -12,6 +31,10 @@
   line-height: $baseLineHeight;
   text-transform: uppercase;
   color: #111111;
+
+  @include tablet {
+    justify-self: start;
+  }
 }
 
 .cooperation__description {
@@ -20,4 +43,8 @@
   width: 140px;
   font-size: $baseFontSize;
   line-height: $mediumLineHeight;
+
+  @include tablet {
+    justify-self: end;
+  }
 }

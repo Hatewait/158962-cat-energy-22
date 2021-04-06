@@ -1,7 +1,35 @@
 .example {
+  position: relative;
   padding-top: 27px;
   padding-bottom: 25px;
-  background: $exampleBg;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: $basicGrey;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  @include tablet {
+    background: $baseBodyColor;
+    padding-bottom: 0;
+
+    &::before {
+      height: 462px;
+      bottom: 0;
+    }
+  }
+}
+
+.example__inner {
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .example__heading {
@@ -12,6 +40,12 @@
   color: $baseHeadingColor;
 }
 
+.example__text-wrap {
+  @include desktop {
+    width: 436px;
+  }
+}
+
 .example__description {
   @include baseFontPropertiesWithOriginalFont;
   margin-bottom: 25px;
@@ -20,9 +54,21 @@
   color: $baseTextColor;
 }
 
+.example__details-wrap {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include desktop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .example__group {
   display: flex;
-  /*justify-content: center;*/
 }
 
 .example__details {
@@ -63,4 +109,8 @@
   line-height: $mediumLineHeight;
   text-transform: uppercase;
   color: $baseHeadingColor;
+
+  @include tablet {
+    margin-bottom: 15px;
+  }
 }

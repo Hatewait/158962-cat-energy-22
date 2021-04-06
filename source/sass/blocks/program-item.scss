@@ -7,6 +7,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include desktop {
+    height: 100%;
+  }
 }
 
 .program-item__title {

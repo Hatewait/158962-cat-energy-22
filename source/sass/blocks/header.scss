@@ -1,0 +1,31 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  @include desktop {
+    padding-top: 50px;
+  }
+}
+
+.header__logo {
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-pic {
+  margin-right: 23%;
+
+  @include tablet {
+    margin-right: 8%;
+  }
+}
