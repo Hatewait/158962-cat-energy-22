@@ -5,6 +5,11 @@
 .crossale__item {
   padding-top: 13px;
   padding-bottom: 19px;
+
+  @include tablet {
+    border: 1px solid $basicGrey;
+    padding: 20px 30px;
+  }
 }
 
 .crossale__heading {
@@ -65,4 +70,11 @@
   color: $buttonTextColor;
   font-size: $mediumFontSize;
   line-height: $mediumLineHeight;
+}
+
+.crossale__buy {
+  @include tablet {
+    width: 632px;
+    margin: 0 auto;
+  }
 }

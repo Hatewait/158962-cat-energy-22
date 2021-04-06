@@ -12,6 +12,24 @@
 
 .set-form__group {
   margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 100%;
+
+    &--email {
+      margin-right: 80px;
+    }
+
+    &--tel {
+      width: 609px;
+    }
+  }
 }
 
 .set-form__label {
@@ -21,6 +39,10 @@
   font-size: $mediumFontSize;
   line-height: $baseLineHeight;
   color: $baseTextColor;
+
+  @include desktop {
+    margin-right: 20px;
+  }
 }
 
 .set-form__input {
@@ -120,10 +142,23 @@
       transform: scale(1);
     }
   }
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .set-form__button {
   margin-bottom: 21px;
+
+  @include tablet {
+    margin-right: 61px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 568px;
+  }
 }
 
 .set-form__reminder {
@@ -139,4 +174,84 @@
   height: 150px;
   padding: 9px 15px;
   border: 1px solid #e7e7e7;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.set-form__bottom {
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.set-form__addition {
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.set-form__addition-group {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+}
+
+.set-form__pet {
+  @include tablet {
+    margin-bottom: 72px;
+  }
+}
+
+.set-form__pet .set-form__group {
+  @include desktop {
+    width: 569px;
+  }
+}
+
+.set-form__program {
+  @include tablet {
+    margin-bottom: 72px;
+  }
+}
+
+.set-form__owner {
+  @include tablet {
+    margin-bottom: 72px;
+  }
+}
+
+.set-form__comment {
+  @include tablet {
+    margin-bottom: 72px;
+  }
+}
+
+.set-form__grid-group {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+}
+
+.set-form__owner-group {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+}
+
+.set-form__owner-group .set-form__group {
+  @include desktop {
+    width: 569px;
+  }
 }

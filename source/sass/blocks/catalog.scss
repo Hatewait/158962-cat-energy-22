@@ -22,3 +22,16 @@
   text-decoration: $linkDecorReset;
   margin-bottom: 25px;
 }
+
+.catalog__products {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+}
