@@ -10,6 +10,13 @@
     border: 1px solid $basicGrey;
     padding: 20px 30px;
   }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    padding: 20px 0;
+  }
 }
 
 .crossale__heading {
@@ -61,6 +68,21 @@
     left: 101px;
     top: 58px;
   }
+
+  @include tablet {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 124px 0 0;
+    background-image: url("../img/get-all-tablet.png");
+    min-height: 200px;
+  }
+
+  @include desktop {
+    justify-content: center;
+    padding: 0;
+    background-image: url("../img/get-all-desktop.png");
+  }
 }
 
 .crossale__gift-text {
@@ -70,11 +92,32 @@
   color: $buttonTextColor;
   font-size: $mediumFontSize;
   line-height: $mediumLineHeight;
+
+  @include tablet {
+    width: 161px;
+  }
+
+  @include desktop {
+    text-align: center;
+  }
 }
 
 .crossale__buy {
   @include tablet {
     width: 632px;
     margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 274px;
+    margin: 0;
+  }
+}
+
+.crossale__content {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 895px 245px;
+    grid-column-gap: 80px;
   }
 }

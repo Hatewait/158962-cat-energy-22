@@ -21,14 +21,6 @@
 
   @include desktop {
     width: 100%;
-
-    &--email {
-      margin-right: 80px;
-    }
-
-    &--tel {
-      width: 609px;
-    }
   }
 }
 
@@ -237,21 +229,23 @@
 .set-form__grid-group {
   @include desktop {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    grid-column-gap: 80px;
   }
 }
 
 .set-form__owner-group {
   @include desktop {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 569px 572px;
     align-items: center;
+    grid-column-gap: 78px;
   }
 }
 
 .set-form__owner-group .set-form__group {
   @include desktop {
-    width: 569px;
+    // width: 569px;
   }
 }
