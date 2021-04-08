@@ -8,6 +8,33 @@
     margin-bottom: 0;
   }
 
+  &::before {
+    @include pseudoElementBaseStyles;
+    top: 24px;
+    left: 22px;
+    background-image: url("../img/cat-slim.png");
+    width: 50px;
+    height: 53px;
+  }
+
+  &--get-weight {
+    &::before {
+      background-image: url("../img/cat-fat.png");
+      width: 67px;
+      height: 50px;
+    }
+  }
+
+  @include tablet {
+    padding: 57px 62px 57px 52px;
+
+    &::before {
+      right: 24px;
+      left: auto;
+      top: 43%;
+    }
+  }
+
   @include desktop {
     height: 100%;
   }
@@ -18,6 +45,12 @@
   margin-bottom: 29px;
   text-transform: uppercase;
   color: $baseHeadingColor;
+
+  @include tablet {
+    font-size: $mainHeadingFontSize;
+    line-height: $mainHeadingLineHeight;
+    margin-bottom: 24px;
+  }
 }
 
 .program-item__image {
@@ -36,6 +69,10 @@
   color: $baseTextColor;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
+
+  @include tablet {
+    padding-right: 219px;
+  }
 }
 
 .program-item__link {
