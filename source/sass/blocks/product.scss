@@ -6,21 +6,7 @@
     background: $basicGrey;
     padding: 0 40px 40px 40px;
     margin-bottom: 140px;
-
-   /* &:nth-last-child(2)  {
-      margin-bottom: 0;
-    }*/
   }
-
-  /*@include desktop {
-    &:nth-last-child(2)  {
-      margin-bottom: auto;
-    }
-
-    &:nth-last-child(4) {
-      margin-bottom: 75px;
-    }
-  }*/
 }
 
 .product__group {
@@ -99,6 +85,7 @@
     padding: 8px 93px;
     margin: 0 auto;
   }
+
   @include desktop {
     width: 168px;
     margin: 0 auto;
