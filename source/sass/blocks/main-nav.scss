@@ -53,10 +53,18 @@
     text-transform: uppercase;
     color: $black;
 
+    &--mod {
+      color: $black;
+    }
+
     @include desktop {
       font-size: 20px;
       line-height: 30px;
       color: $white;
+
+      &--mod {
+        color: $black;
+      }
     }
   }
 }

@@ -4,25 +4,22 @@
   margin-bottom: 22px;
   min-height: 302px;
   z-index: -1;
-  background-image: url("../img/intro-bg.jpg"), linear-gradient(to right, #ffffff 100%, #5eaa2f 50%);
-  background-repeat: no-repeat;
-  // background-position: 100% 0, 0, 0;
-  background-size: contain;
-  background-position: top;
+  color: #ffffff;
+  background: url("../img/introduction-food.png") 50% 72% no-repeat, url("../../img/intro-bg.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
+  text-align: center;
 
   @include tablet {
-    background-image: none;
+    background: url("../img/introduction-food-tablet.png") 48% 100% no-repeat;
+    background-size: 709px 609px;
+    padding-top: 54px;
+    padding-bottom: 532px;
   }
 
   @include desktop {
-
-    margin-bottom: 82px;
-    background-image: url("../img/intro-bg-desktop.jpg"), linear-gradient(to right, #ffffff 100%, #5eaa2f 50%);
-    background-size: 720px auto;
-    height: 696px;
     margin-top: -110px;
-    padding-top: 100px;
-    background-position: right;
+    margin-bottom: 82px;
+    background: url("../img/introduction-food-desktop.png") 560px 140px no-repeat, url("../img/intro-bg-desktop.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
+    height: 720px;
   }
 }
 
@@ -44,12 +41,13 @@
   @include baseFontPropertiesWithCustomFont;
   margin-bottom: 25px;
   line-height: $mainHeadingLineHeight;
+  font-size: $mainHeadingFontSize;
   text-align: center;
   color: #ffffff;
 
   @include tablet {
-    font-size: $mainHeadingFontSizeTablet;
-    line-height: $mainHeadingLineHeightTablet;
+    font-size: $mainHeadingFontSizeBig;
+    line-height: $mainHeadingLineHeightBig;
     margin-bottom: 41px;
     color: $black;
     text-align: left;
@@ -61,7 +59,7 @@
 
 .introduction__text {
   @include baseFontPropertiesWithCustomFont;
-  margin-bottom: 30px;
+  margin-bottom: 300px;
   line-height: $baseFontSize;
   color: #ffffff;
   text-transform: uppercase;

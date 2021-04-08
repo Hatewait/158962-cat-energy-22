@@ -2,31 +2,100 @@
   position: relative;
   margin-bottom: 20px;
   background: $decorBgColor;
-  padding: 30px 52px 22px 91px;
+  padding: 30px 20px 22px 20px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
+  &::before {
+    @include pseudoElementBaseStyles;
+    top: 24px;
+    left: 22px;
+    background-image: url("../img/cat-slim.png");
+    width: 50px;
+    height: 53px;
+  }
+
+  &--get-weight {
+    &::before {
+      background-image: url("../img/cat-fat.png");
+      width: 67px;
+      height: 50px;
+    }
+  }
+
+  @include tablet {
+    padding: 57px 62px 57px 52px;
+
+    &::before {
+      background-image: url("../img/cat-slim-tablet.png");
+      right: 24px;
+      left: auto;
+      top: 64px;
+      width: 200px;
+      height: 211px;
+    }
+
+    &--get-weight {
+      &::before {
+        background-image: url("../img/cat-fat-tablet.png");
+        right: 24px;
+        left: auto;
+        top: 64px;
+        width: 268px;
+        height: 200px;
+      }
+    }
+  }
+
   @include desktop {
     height: 100%;
+    padding: 47px 51px 59px 52px;
+
+    &::before {
+      background-image: url("../img/cat-slim-desktop.png");
+      right: auto;
+      left: 52px;
+      top: 47px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--get-weight {
+      &::before {
+        background-image: url("../img/cat-fat-desktop.png");
+        right: auto;
+        left: 52px;
+        top: 47px;
+        width: 134px;
+        height: 200px;
+      }
+    }
   }
 }
 
 .program-item__title {
   @include baseFontPropertiesWithCustomFont;
   margin-bottom: 29px;
+  padding-left: 70px;
   text-transform: uppercase;
   color: $baseHeadingColor;
-}
 
-.program-item__image {
-  position: absolute;
-  top: 24px;
-  left: 22px;
+  @include tablet {
+    font-size: $mainHeadingFontSize;
+    line-height: $mainHeadingLineHeight;
+    margin-bottom: 24px;
+    padding-left: 0;
+  }
 
-  &--up-weight {
-    left: 13px;
+  @include desktop {
+    text-align: center;
+    margin-bottom: 73px;
+
+    &--get-weigth {
+      padding-left: 70px;
+    }
   }
 }
 
@@ -36,6 +105,14 @@
   color: $baseTextColor;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
+
+  @include tablet {
+    padding-right: 219px;
+  }
+
+  @include desktop {
+    padding-right: 0;
+  }
 }
 
 .program-item__link {

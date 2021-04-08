@@ -61,21 +61,26 @@
 // containers
 @mixin container() {
   position: relative;
-  min-width: 320px;
+  width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
 
 @mixin containerTablet() {
   position: relative;
-  width: 768px;
+  width: 708px;
   margin: 0 auto;
-  padding: 0 30px;
+  // padding: 0 30px;
+
+  &--form {
+    // padding: 0 50px;
+    width: 630px;
+  }
 }
 
 @mixin containerDesktop() {
   position: relative;
-  width: 1440px;
+  width: 1220px;
   margin: 0 auto;
-  padding: 0 110px;
+  // padding: 0 110px;
 }

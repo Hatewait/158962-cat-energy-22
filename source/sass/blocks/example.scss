@@ -1,7 +1,7 @@
 .example {
   position: relative;
   padding-top: 27px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 
   &::before {
     position: absolute;
@@ -15,7 +15,7 @@
 
   @include tablet {
     background: $baseBodyColor;
-    padding-bottom: 0;
+    margin-bottom: 0;
 
     &::before {
       height: 462px;
@@ -38,6 +38,15 @@
   font-size: $mainHeadingFontSize;
   line-height: 40px;
   color: $baseHeadingColor;
+
+  @include tablet {
+    font-size: $mainHeadingFontSizeBig;
+    line-height: $mainHeadingLineHeightBig;
+  }
+
+  @include desktop {
+    margin-bottom: 70px;
+  }
 }
 
 .example__text-wrap {
