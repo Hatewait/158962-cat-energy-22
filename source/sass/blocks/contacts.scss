@@ -1,16 +1,12 @@
 .contacts {
-  padding: 28px 0;
 
   &--form {
     background: $decorBgColor;
   }
-
-  @include tablet {
-    padding: 0;
-  }
 }
 
 .contacts__container {
+  padding: 28px 0;
   @include tablet {
     padding-bottom: 60px;
     padding-top: 60px;

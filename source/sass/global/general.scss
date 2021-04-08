@@ -42,7 +42,6 @@ img {
   justify-content: center;
   align-items: center;
   padding: 8px 44px;
-  width: 279px;
   height: 40px;
   background: $buttonBgColor;
   font-family: $customFontFamily;
@@ -91,6 +90,11 @@ img {
   font-size: $mainHeadingFontSize;
   line-height: $mainHeadingLineHeight;
   color: $baseHeadingColor;
+
+  @include tablet {
+    font-size: $mainHeadingFontSizeBig;
+    line-height: $mainHeadingLineHeightBig;
+  }
 }
 
 .container {

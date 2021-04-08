@@ -26,6 +26,13 @@
   font-size: 24px;
   line-height: 24px;
   color: $baseHeadingColor;
+
+  @include tablet {
+    margin-top: 68px;
+    margin-bottom: 70px;
+    font-size: $mainHeadingFontSize;
+    line-height: $mainHeadingLineHeight;
+  }
 }
 
 .crossale__subheading {

@@ -41,12 +41,13 @@
   @include baseFontPropertiesWithCustomFont;
   margin-bottom: 25px;
   line-height: $mainHeadingLineHeight;
+  font-size: $mainHeadingFontSize;
   text-align: center;
   color: #ffffff;
 
   @include tablet {
-    font-size: $mainHeadingFontSizeTablet;
-    line-height: $mainHeadingLineHeightTablet;
+    font-size: $mainHeadingFontSizeBig;
+    line-height: $mainHeadingLineHeightBig;
     margin-bottom: 41px;
     color: $black;
     text-align: left;

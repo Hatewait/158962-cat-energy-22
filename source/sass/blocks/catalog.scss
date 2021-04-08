@@ -1,3 +1,7 @@
+.catalog__heading {
+  margin-bottom: 71px;
+}
+
 .catalog__subtitle {
   @include baseFontPropertiesWithCustomFont;
   position: relative;
@@ -31,7 +35,7 @@
 .catalog__products {
   @include tablet {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 324px 324px;
     grid-column-gap: 60px;
   }
 
@@ -48,5 +52,6 @@
     align-items: center;
     justify-content: space-around;
     border: 2px solid $basicGrey;
+    height: 361px;
   }
 }

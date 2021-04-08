@@ -8,6 +8,16 @@
   font-size: $mainHeadingFontSize;
   line-height: 40px;
   color: $baseHeadingColor;
+
+  @include tablet {
+    font-size: $mainHeadingFontSizeBig;
+    line-height: $mainHeadingLineHeightBig;
+  }
+
+  @include desktop {
+    font-size: $mainHeadingFontSizeBig;
+    line-height: $mainHeadingLineHeightBig;
+  }
 }
 
 .about__list {
@@ -17,6 +27,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-column-gap: 154px;
   }
 
   @include desktop {
@@ -31,8 +42,6 @@
   position: relative;
   padding-left: 80px;
   margin-bottom: 26px;
-  /*temporary width*/
-  max-width: 200px;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $baseTextColor;
@@ -78,6 +87,13 @@
     @include pseudoElementBaseStyles;
     width: 30px;
     height: 30px;
+  }
+
+  @include tablet {
+    min-height: 280px;
+    margin-bottom: 37px;
+    padding-top: 151px;
+    padding-left: 0;
   }
 
   @include desktop {

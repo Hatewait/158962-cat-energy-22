@@ -1,5 +1,9 @@
 .programs {
   margin-bottom: 27px;
+
+  @include desktop {
+    margin-bottom: 71px;
+  }
 }
 
 .programs__container {
