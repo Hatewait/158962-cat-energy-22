@@ -16,7 +16,7 @@
   align-items: center;
 
   @include tablet {
-    width: 50%;
+    // width: 50%;
   }
 
   @include desktop {
@@ -136,7 +136,7 @@
   }
 
   @include tablet {
-    width: 100%;
+    flex-grow: 1;
   }
 }
 
@@ -202,12 +202,6 @@
   }
 }
 
-.set-form__pet .set-form__group {
-  @include desktop {
-    width: 569px;
-  }
-}
-
 .set-form__program {
   @include tablet {
     margin-bottom: 72px;
@@ -241,11 +235,5 @@
     grid-template-columns: 569px 572px;
     align-items: center;
     grid-column-gap: 78px;
-  }
-}
-
-.set-form__owner-group .set-form__group {
-  @include desktop {
-    // width: 569px;
   }
 }
