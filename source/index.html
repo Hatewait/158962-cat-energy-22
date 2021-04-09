@@ -9,18 +9,20 @@
 <body class="page__body">
 
 <header class="header">
-  <div class="header__container container">
-    <a class="header__logo">
-      <img class="header__logo-pic" src="img/logo-mobile-header.svg" width="33" height="37" alt="Кэт энерджи»">
-      <img class="header__logo-text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
-    </a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+  <div class="header__container">
+    <div class="header__group">
+      <a class="header__logo">
+        <img class="header__logo-pic" src="img/logo-mobile-header.svg" width="33" height="37" alt="Кэт энерджи»">
+        <img class="header__logo-text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
+      </a>
+      <button class="header__toggle nav-toggle nav-toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
         <img src="img/burger.svg" alt="">
       </button>
+    </div>
 
+    <!--main-nav--opened  main-nav--nojs-->
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
@@ -121,20 +123,10 @@
             <div class="slider__slide slider__slide--fat">
               <picture>
                 <source media="(min-width:1440px)"
-                        srcset="img/before-desktop-cut.png 1x">
+                        srcset="img/slider-cat-desktop.png 1x">
                 <source media="(min-width:768px)"
-                        srcset="img/before-tablet.png 1x">
+                        srcset="img/slider-cat-tablet.png 1x">
                 <img src="img/fat-cat-slide.png" alt="Котяра до липосакции">
-              </picture>
-            </div>
-
-            <div class="slider__slide slider__slide--slim">
-              <picture>
-                <source media="(min-width:1440px)"
-                        srcset="img/after-desktop.png 1x">
-                <source media="(min-width:768px)"
-                        srcset="img/after-desktop.png 1x">
-                <img src="img/slim-cat-slide.png" alt="Котяра после липосакции">
               </picture>
             </div>
 
@@ -206,5 +198,6 @@
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>

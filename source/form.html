@@ -9,16 +9,20 @@
 <body class="page__body">
 
 <header class="header">
-  <div class="header__container container">
-    <a href="index.html" class="header__logo">
-      <img class="header__logo-pic" src="img/logo-mobile-header.svg" width="34" height="37" alt="Кэт энерджи»">
-      <img class="header__logo-text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»"></a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+  <div class="header__container">
+    <div class="header__group">
+      <a href="index.html" class="header__logo">
+        <img class="header__logo-pic" src="img/logo-mobile-header.svg" width="33" height="37" alt="Кэт энерджи»">
+        <img class="header__logo-text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
+      </a>
+      <button class="header__toggle nav-toggle nav-toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <img src="img/burger.svg" alt="">
       </button>
+    </div>
 
+    <!--main-nav--opened  main-nav--nojs-->
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="index.html" class="main-nav__link main-nav__link--mod">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--mod">Каталог продукции</a></li>
@@ -184,5 +188,6 @@
 
   </div>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>

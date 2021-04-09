@@ -1,0 +1,12 @@
+.nav-toggle {
+  @include buttonStyleReset;
+  background: $baseBodyColor;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}

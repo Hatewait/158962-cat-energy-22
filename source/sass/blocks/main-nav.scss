@@ -1,7 +1,13 @@
 .main-nav {
+  display: none;
   background-color: $baseBodyColor;
 
+  &--open {
+    display: block;
+  }
+
   @include tablet {
+    display: block;
     justify-self: end;
   }
 
@@ -14,16 +20,22 @@
 
 .main-nav__list {
   @include listStyleReset;
-  display: none;
 
   @include tablet {
     display: flex;
+    flex-direction: row;
   }
 }
 
 .main-nav__item {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
+
   @include tablet {
     margin-right: 33px;
+    border-bottom: 0;
 
     &:last-child {
       margin-right: 0;
@@ -31,26 +43,19 @@
   }
 }
 
-.main-nav__toggle {
-  @include buttonStyleReset;
-  background: $baseBodyColor;
-
-  @include tablet {
-    display: none;
-  }
-
-  @include desktop {
-    display: none;
-  }
-}
-
 .main-nav__link {
+  @include baseFontPropertiesWithCustomFont;
+  text-decoration: $linkDecorReset;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  color: $black;
+
   @include tablet {
-    @include baseFontPropertiesWithCustomFont;
-    text-decoration: $linkDecorReset;
     font-size: 18px;
     line-height: 24px;
-    text-transform: uppercase;
     color: $black;
 
     &--mod {

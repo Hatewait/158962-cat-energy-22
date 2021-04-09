@@ -6,7 +6,6 @@
   @include desktop {
     display: flex;
     align-items: center;
-    margin-top: -196px;
   }
 }
 
@@ -23,35 +22,18 @@
 
   @include desktop {
     margin-bottom: 0;
-
-    &--slim {
-      position: relative;
-      z-index: 1;
-
-      &::before {
-        position: absolute;
-        content: "";
-        width: 2000px;
-        right: -1675px;
-        top: 197px;
-        bottom: 0;
-        height: 462px;
-        background: #eaeaea;
-        z-index: -1;
-      }
-    }
   }
 }
 
 .slider__container {
   @include tablet {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 708px;
   }
 
   @include desktop {
     grid-template-rows: 1fr;
-    grid-template-columns: 325px 325px;
+    grid-template-columns: 690px;
   }
 }
 

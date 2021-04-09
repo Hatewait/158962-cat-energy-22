@@ -10,14 +10,22 @@
   color: $baseHeadingColor;
 }
 
+.set-form__pet {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.set-form__program {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
 .set-form__group {
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-
-  @include tablet {
-    // width: 50%;
-  }
 
   @include desktop {
     width: 100%;
