@@ -14,12 +14,20 @@
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 72px;
+  }
 }
 
 .set-form__program {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 72px;
+  }
 }
 
 .set-form__group {
@@ -201,18 +209,6 @@
 
   @include desktop {
     flex-wrap: nowrap;
-  }
-}
-
-.set-form__pet {
-  @include tablet {
-    margin-bottom: 72px;
-  }
-}
-
-.set-form__program {
-  @include tablet {
-    margin-bottom: 72px;
   }
 }
 
