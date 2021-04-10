@@ -1,18 +1,34 @@
 .header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
 
   @include tablet {
+    @include containerTablet;
+
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
   }
 
   @include desktop {
-    padding-top: 50px;
+    @include containerDesktop;
+    padding-top: 0;
+  }
+}
+
+.header__group {
+  @include container;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @include tablet {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    border-bottom: 0;
   }
 }
 
