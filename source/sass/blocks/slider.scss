@@ -52,7 +52,7 @@
   }
 
   @include desktop {
-    width: 460px;
+    width: auto;
     z-index: 1;
     position: absolute;
     bottom: 72px;
@@ -66,6 +66,12 @@
   line-height: $mediumLineHeight;
   text-transform: uppercase;
   color: $baseHeadingColor;
+
+  @include tablet {
+    border-bottom: 1px dotted #cdcdcd;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .slider__range {
@@ -78,6 +84,10 @@
 
   @include tablet {
     width: 428px;
+    height: 6px;
+    background: #dcdcdc;
+    border: 0;
+    border-radius: 6px;
   }
 }
 
@@ -86,4 +96,30 @@
   height: 6px;
   background: $buttonBgColor;
   border-radius: 6px;
+
+  @include tablet {
+    position: absolute;
+    left: 47%;
+    top: -5px;
+    border-radius: 50%;
+    background-color: $baseBodyColor;
+    border: 1px solid #cdcdcd;
+    width: 34px;
+    height: 34px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: $darkGreen;
+      width: 8px;
+      height: 8px;
+      top: 12px;
+      left: 12px;
+      border-radius: 50%;
+    }
+  }
+
+  @include desktop {
+    left: 51%;
+  }
 }
