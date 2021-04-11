@@ -1,11 +1,31 @@
 .product {
+  position: relative;
   padding-top: 19px;
   padding-bottom: 25px;
 
+  &::before {
+    @include pseudoElementBaseStyles;
+    z-index: 1000;
+    background: $basicGrey;
+    width: 3000px;
+    height: 1px;
+    bottom: 0;
+    left: -800px;
+    right: -800px;
+  }
+
   @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background: $basicGrey;
     padding: 0 40px 40px 40px;
-    margin-bottom: 140px;
+    height: 100%;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -82,12 +102,11 @@
 
 .product__buy {
   @include tablet {
-    padding: 8px 93px;
+    width: 248px;
     margin: 0 auto;
   }
 
   @include desktop {
     width: 168px;
-    margin: 0 auto;
   }
 }

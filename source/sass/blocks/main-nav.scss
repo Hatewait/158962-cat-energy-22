@@ -33,12 +33,20 @@
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
 
+  &--mode {
+    border-top: 1px solid #e6e6e6;
+  }
+
   @include tablet {
     margin-right: 33px;
     border-bottom: 0;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &--mode {
+      border-top: 0;
     }
   }
 }

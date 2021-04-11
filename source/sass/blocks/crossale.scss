@@ -1,37 +1,92 @@
 .crossale__items {
+  @include listStyleReset;
   margin-bottom: 40px;
 }
 
 .crossale__item {
   padding-top: 13px;
   padding-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
 
   @include tablet {
     border: 1px solid $basicGrey;
-    padding: 20px 30px;
+    padding: 20px 38px;
   }
 
   @include desktop {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 72px;
     padding: 20px 0;
+    border-left: 0;
+    border-right: 0;
   }
 }
 
 .crossale__heading {
   @include baseFontPropertiesWithCustomFont;
+  position: relative;
   margin-top: 25px;
   margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   color: $baseHeadingColor;
+
+  &::before {
+    @include decorLineRight;
+  }
 
   @include tablet {
     margin-top: 68px;
     margin-bottom: 70px;
+    text-align: left;
+    padding-left: 37px;
     font-size: $mainHeadingFontSize;
     line-height: $mainHeadingLineHeight;
+
+    &::before {
+      width: 1000px;
+      height: 2px;
+      bottom: 11px;
+      right: -701px;
+    }
+
+    &::after {
+      @include decorLineLeft;
+    }
+  }
+
+  @include desktop {
+    padding-left: 0;
+
+    &::after {
+      left: -814px;
+    }
+
+    &::before {
+      width: 1500px;
+    }
+  }
+}
+
+.crossale__description {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+  }
+
+  @include desktop {
+    align-items: center;
+    margin: 0;
+    width: 450px;
+    justify-content: space-between;
   }
 }
 
@@ -42,12 +97,20 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .crossale__group {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .crossale__amount,
@@ -61,8 +124,7 @@
 
 .crossale__get-all {
   position: relative;
-  padding-top: 185px;
-  padding-bottom: 43px;
+  padding: 185px 58px 43px 58px;
   min-height: 289px;
   background-image: url("../img/get-all.png");
   background-repeat: no-repeat;
@@ -89,13 +151,17 @@
     justify-content: center;
     padding: 0;
     background-image: url("../img/get-all-desktop.png");
+
+    &::before {
+      left: 89px;
+    }
   }
 }
 
 .crossale__gift-text {
   @include baseFontPropertiesWithOriginalFont;
   margin: 0;
-  /*text-align: center;*/
+  text-align: center;
   color: $buttonTextColor;
   font-size: $mediumFontSize;
   line-height: $mediumLineHeight;
@@ -105,6 +171,7 @@
   }
 
   @include desktop {
+    margin-top: 60px;
     text-align: center;
   }
 }

@@ -19,6 +19,7 @@
     margin-bottom: 0;
     background: linear-gradient(to top, #f2f2f2 460px, #ffffff 460px) no-repeat, linear-gradient(to top, #eaeaea 460px, #ffffff 460px) no-repeat;
     background-size: 70% 100%, 100% 100%;
+    border-top: 0;
   }
 }
 
@@ -57,6 +58,11 @@
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $baseTextColor;
+
+  @include desktop {
+    margin-bottom: 50px;
+    margin-top: 135px;
+  }
 }
 
 .example__details-wrap {
@@ -74,6 +80,14 @@
 
 .example__group {
   display: flex;
+
+  @include tablet {
+    margin-right: 240px;
+  }
+
+  @include desktop {
+    margin-bottom: 35px;
+  }
 }
 
 .example__details {
@@ -115,7 +129,11 @@
 
   @include tablet {
     width: auto;
-    /*background-color: #ffffff;*/
+    background-color: #ffffff;
+  }
+
+  @include desktop {
+    background-color: $basicGrey;
   }
 }
 
@@ -129,6 +147,9 @@
   color: $baseHeadingColor;
 
   @include tablet {
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
   }
 }
