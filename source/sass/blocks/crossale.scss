@@ -29,49 +29,42 @@
 }
 
 .crossale__heading {
+  padding-left: calc((100% - 280px) / 2);
+
   @include baseFontPropertiesWithCustomFont;
-  position: relative;
+  border-bottom: 2px solid $darkGreen;
+  transform: translateY(-14px);
   margin-top: 25px;
   margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
   color: $baseHeadingColor;
 
-  &::before {
-    @include decorLineRight;
-  }
-
   @include tablet {
+    padding-left: calc((100% - 708px) / 2);
     margin-top: 68px;
     margin-bottom: 70px;
     text-align: left;
-    padding-left: 37px;
     font-size: $mainHeadingFontSize;
     line-height: $mainHeadingLineHeight;
-
-    &::before {
-      width: 1000px;
-      height: 2px;
-      bottom: 11px;
-      right: -701px;
-    }
-
-    &::after {
-      @include decorLineLeft;
-    }
   }
 
   @include desktop {
-    padding-left: 0;
+    padding-left: calc((100% - 1220px) / 2);
+  }
+}
 
-    &::after {
-      left: -814px;
-    }
+.crossale__heading-text {
+  background-color: $baseBodyColor;
+  display: inline-block;
+  transform: translate(-20px, 9px);
+  padding-left: 20px;
+  padding-right: 24px;
 
-    &::before {
-      width: 1500px;
-    }
+  @include tablet {
+    padding: 0 40px;
+    transform: translate(-5px, 10px);
   }
 }
 
@@ -92,6 +85,7 @@
 
 .crossale__subheading {
   @include baseFontPropertiesWithCustomFont;
+
   margin-bottom: 13px;
   font-size: $mediumFontSize;
   line-height: 16px;

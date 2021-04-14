@@ -83,23 +83,3 @@
   margin: 0 auto;
   padding: 0;
 }
-
-@mixin decorLineRight() {
-  @include pseudoElementBaseStyles;
-  z-index: 1000;
-  background: $darkGreen;
-  width: 800px;
-  height: 2px;
-  bottom: 7px;
-  right: -787px;
-}
-
-@mixin decorLineLeft() {
-  @include pseudoElementBaseStyles;
-  z-index: 1000;
-  background: $darkGreen;
-  width: 800px;
-  height: 2px;
-  bottom: 13px;
-  left: -787px;
-}
