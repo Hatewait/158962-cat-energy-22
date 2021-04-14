@@ -85,6 +85,12 @@
   display: flex;
   align-items: center;
 
+  &--radio:focus-within,
+  &--checkbox:focus-within {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
   @include desktop {
     width: 100%;
   }
@@ -109,7 +115,10 @@
   border: 1px solid #e7e7e7;
 
   &--radio {
-    display: none;
+    // display: none;
+    position: absolute;
+    top: -999;
+    left: -999;
 
     &:checked + label,
     &:not(:checked) + label {
@@ -117,6 +126,7 @@
       padding-left: 50px;
       cursor: pointer;
       display: inline-block;
+      opacity: 1;
     }
 
     &:checked + label::before,
@@ -130,6 +140,7 @@
       border: 1px solid #cdcdcd;
       border-radius: 100%;
       background: $baseBodyColor;
+      opacity: 1;
     }
 
     &:checked + label::after,
@@ -143,6 +154,7 @@
       left: 8px;
       border-radius: 100%;
       transition: all 0.2s ease;
+      opacity: 1;
     }
 
     &:not(:checked) + label::after {
@@ -157,7 +169,9 @@
   }
 
   &--checkbox {
-    display: none;
+    position: absolute;
+    top: -999;
+    left: -999;
 
     &:checked + label,
     &:not(:checked) + label {
@@ -232,6 +246,7 @@
   height: 150px;
   padding: 9px 15px;
   border: 1px solid #e7e7e7;
+  resize: none;
 
   @include tablet {
     width: 100%;

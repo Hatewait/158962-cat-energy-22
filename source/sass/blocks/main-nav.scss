@@ -6,6 +6,10 @@
     display: block;
   }
 
+  &--nojs {
+    display: block;
+  }
+
   @include tablet {
     display: block;
     justify-self: end;

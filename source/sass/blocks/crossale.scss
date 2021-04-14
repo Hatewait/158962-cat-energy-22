@@ -30,6 +30,7 @@
 
 .crossale__heading {
   padding-left: calc((100% - 280px) / 2);
+
   @include baseFontPropertiesWithCustomFont;
   border-bottom: 2px solid $darkGreen;
   transform: translateY(-14px);
@@ -51,7 +52,6 @@
 
   @include desktop {
     padding-left: calc((100% - 1220px) / 2);
-
   }
 }
 
@@ -85,6 +85,7 @@
 
 .crossale__subheading {
   @include baseFontPropertiesWithCustomFont;
+
   margin-bottom: 13px;
   font-size: $mediumFontSize;
   line-height: 16px;
