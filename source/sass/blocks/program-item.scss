@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 20px;
   background: $decorBgColor;
-  padding: 30px 20px 22px 20px;
+  padding: 30px 20px 19px 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -12,64 +12,93 @@
     @include pseudoElementBaseStyles;
     top: 24px;
     left: 22px;
-    background-image: url("../img/cat-slim.png");
+    background-image: url("../../img/programm-slim-mobile@1x.png");
     width: 50px;
     height: 53px;
+    background-size: contain;
+
+    @include retina {
+      background-image: url("../../img/programm-slim-mobile@2x.png");
+    }
   }
 
   &--get-weight {
+    padding-top: 25px;
+
     &::before {
-      background-image: url("../img/cat-fat.png");
+      background-image: url("../../img/programm-fat-mobile@1x.png");
       width: 67px;
       height: 50px;
+      top: 22px;
+      left: 14px;
+
+      @include retina {
+        background-image: url("../../img/programm-fat-mobile@2x.png");
+      }
     }
   }
 
   @include tablet {
-    padding: 57px 62px 57px 52px;
+    padding: 75px 62px 59px 52px;
+    margin-bottom: 29px;
 
     &::before {
-      background-image: url("../img/cat-slim-tablet.png");
-      right: 24px;
+      background-image: url("../../img/programm-slim-tablet@1x.png");
+      right: 61px;
       left: auto;
-      top: 64px;
+      top: 80px;
       width: 200px;
       height: 211px;
+
+      @include retina {
+        background-image: url("../../img/programm-slim-tablet@2x.png");
+      }
     }
 
     &--get-weight {
       &::before {
-        background-image: url("../img/cat-fat-tablet.png");
-        right: 24px;
+        background-image: url("../../img/programm-fat-tablet@1x.png");
+        right: 27px;
         left: auto;
-        top: 64px;
+        top: 89px;
         width: 268px;
         height: 200px;
+
+        @include retina {
+          background-image: url("../../img/programm-fat-tablet@2x.png");
+        }
       }
     }
   }
 
   @include desktop {
     height: 100%;
-    padding: 47px 51px 59px 52px;
+    padding: 77px 51px 3px 52px;
 
     &::before {
-      background-image: url("../img/cat-slim-desktop.png");
+      background-image: url("../../img/programm-slim-desktop@1x.png");
       right: auto;
-      left: 52px;
-      top: 47px;
+      left: 53px;
+      top: 40px;
       width: 100px;
-      height: 100px;
+
+      @include retina {
+        background-image: url("../../img/programm-slim-desktop@2x.png");
+      }
     }
 
     &--get-weight {
       &::before {
-        background-image: url("../img/cat-fat-desktop.png");
+        background-image: url("../../img/programm-fat-desktop@1x.png");
         right: auto;
-        left: 23px;
+        left: 32px;
         top: 47px;
         width: 134px;
         height: 200px;
+
+        @include retina {
+          background-image: url("../../img/programm-fat-desktop@2x.png");
+        }
       }
     }
   }
@@ -77,10 +106,17 @@
 
 .program-item__title {
   @include baseFontPropertiesWithCustomFont;
-  margin-bottom: 29px;
-  padding-left: 70px;
+  margin-bottom: 31px;
+  margin-top: 0;
+  padding-left: 72px;
+  font-size: 24px;
+  line-height: 37px;
   text-transform: uppercase;
   color: $baseHeadingColor;
+
+  &--get-weight {
+    margin-bottom: 32px;
+  }
 
   @include tablet {
     font-size: $mainHeadingFontSize;
@@ -92,12 +128,17 @@
   @include desktop {
     text-align: center;
     margin-bottom: 73px;
+    margin-left: 22px;
+
+    &--get-weight {
+      margin-left: 60px;
+    }
   }
 }
 
 .program-item__text {
   @include baseFontPropertiesWithOriginalFont;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   color: $baseTextColor;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
@@ -106,10 +147,16 @@
     padding-right: 219px;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 53px;
+
+    &--get-weight {
+      padding-right: 252px;
+    }
   }
 
   @include desktop {
     padding-right: 0;
+    margin-bottom: 27px;
   }
 }
 
@@ -138,7 +185,7 @@
     line-height: 30px;
 
     &::before {
-      right: -14px;
+      right: -28px;
       top: 9px;
     }
   }

@@ -1,25 +1,41 @@
 .introduction {
   position: relative;
-  padding-top: 27px;
   margin-bottom: 22px;
+  padding-top: 27px;
   min-height: 302px;
   z-index: -1;
   color: #ffffff;
-  background: url("../img/introduction-food.png") 50% 72% no-repeat, url("../../img/intro-bg.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
+  background: url("../../img/introduction-food-mobile@1x.png") 50% 72% no-repeat, url("../../img/intro-bg-mobile@1x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
   text-align: center;
 
+  @include retina {
+    background: url("../../img/introduction-food-mobile@2x.png") 50% 72% no-repeat, url("../../img/intro-bg-mobile@2x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
+    background-size: contain;
+  }
+
   @include tablet {
-    background: url("../img/introduction-food-tablet.png") 48% 100% no-repeat;
+    background: url("../../img/introduction-food-tablet@1x.png") 48% 100% no-repeat;
     background-size: 709px 609px;
-    padding-top: 54px;
-    padding-bottom: 532px;
+    padding-top: 48px;
+    padding-bottom: 527px;
+    margin-bottom: 0;
+
+    @include retina {
+      background: url("../../img/introduction-food-tablet@2x.png") 48% 100% no-repeat;
+      background-size: 709px 609px;
+    }
   }
 
   @include desktop {
-    margin-top: -110px;
-    margin-bottom: 82px;
-    background: url("../img/introduction-food-desktop.png") 560px 140px no-repeat, url("../img/intro-bg-desktop.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
+    margin-top: -128px;
+    margin-bottom: 58px;
+    background: url("../../img/introduction-food-desktop@1x.png") 560px 140px no-repeat, url("../../img/intro-bg-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
     height: 720px;
+
+    @include retina {
+      background: url("../../img/introduction-food-desktop@2x.png") 560px 140px no-repeat, url("../../img/intro-bg-desktop@2x.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
+      background-size: 551px 505px, 719px 97%, 100px;
+    }
   }
 }
 
@@ -29,17 +45,20 @@
 
   @include tablet {
     display: grid;
+    padding-left: 113px;
   }
 
   @include desktop {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr;
+    padding-left: 78px;
   }
 }
 
 .introduction__heading {
   @include baseFontPropertiesWithCustomFont;
   margin-bottom: 25px;
+  margin-top: 0;
   line-height: $mainHeadingLineHeight;
   font-size: $mainHeadingFontSize;
   text-align: center;
@@ -48,22 +67,24 @@
   @include tablet {
     font-size: $mainHeadingFontSizeBig;
     line-height: $mainHeadingLineHeightBig;
-    margin-bottom: 41px;
+    margin-bottom: 21px;
     color: $black;
     text-align: left;
     justify-self: left;
     order: 1;
-    max-width: 414px;
+    max-width: 417px;
+    padding-left: 3px;
   }
 
   @include desktop {
-    margin-top: 100px;
+    margin-top: 176px;
   }
 }
 
 .introduction__text {
   @include baseFontPropertiesWithCustomFont;
   margin-bottom: 300px;
+  padding-left: 4px;
   line-height: $baseFontSize;
   color: #ffffff;
   text-transform: uppercase;
@@ -87,6 +108,11 @@
   @include tablet {
     order: 3;
     justify-self: left;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
   }
 }
 

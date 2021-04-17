@@ -1,6 +1,7 @@
 .nav-toggle {
   @include buttonStyleReset;
   background: $baseBodyColor;
+  padding: 0;
 
   @include tablet {
     display: none;

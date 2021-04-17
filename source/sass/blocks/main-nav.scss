@@ -42,7 +42,8 @@
   }
 
   @include tablet {
-    margin-right: 33px;
+    padding-top: 42px;
+    margin-right: 35px;
     border-bottom: 0;
 
     &:last-child {
