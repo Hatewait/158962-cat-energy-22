@@ -1,24 +1,24 @@
 .example {
   position: relative;
   padding-top: 27px;
-  margin-bottom: 25px;
   background: $basicGrey;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 
   @include tablet {
     background: linear-gradient(to top, #eaeaea 460px, #ffffff 460px) no-repeat;
     background-size: 100% 100%, 100% 100%;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     border-top: 1px solid #e6e6e6;
   }
 
   @include desktop {
-    padding-top: 22px;
+    padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-top: -43px;
     background: linear-gradient(to top, #f2f2f2 460px, #ffffff 460px) no-repeat, linear-gradient(to top, #eaeaea 460px, #ffffff 460px) no-repeat;
-    background-size: 70% 100%, 100% 100%;
+    background-size: 72.5% 100%, 100% 100%;
     border-top: 0;
   }
 }
@@ -34,7 +34,8 @@
 
 .example__heading {
   @include baseFontPropertiesWithCustomFont;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
+  margin-top: 0;
   font-size: $mainHeadingFontSize;
   line-height: 40px;
   color: $baseHeadingColor;
@@ -42,26 +43,44 @@
   @include tablet {
     font-size: $mainHeadingFontSizeBig;
     line-height: $mainHeadingLineHeightBig;
+    margin-top: 41px;
+    margin-bottom: 64px;
+  }
+
+  @include desktop {
+    margin: 0;
   }
 }
 
 .example__text-wrap {
+  @include tablet {
+    margin-bottom: 58px;
+  }
+
   @include desktop {
     padding-top: 65px;
-    width: 436px;
+    width: 445px;
+    margin-right: 125px;
   }
 }
 
 .example__description {
   @include baseFontPropertiesWithOriginalFont;
-  margin-bottom: 25px;
+  margin-bottom: 2px;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   color: $baseTextColor;
 
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+
   @include desktop {
     margin-bottom: 50px;
-    margin-top: 135px;
+    margin-top: 191px;
   }
 }
 
@@ -82,7 +101,7 @@
   display: flex;
 
   @include tablet {
-    margin-right: 240px;
+    margin-right: 160px;
   }
 
   @include desktop {
@@ -97,13 +116,19 @@
   align-items: center;
 
   &--weight {
-    margin-right: 30px;
+    margin-right: 32px;
+  }
+
+  @include tablet {
+    &--weight {
+      margin-right: 43px;
+    }
   }
 }
 
 .example__text {
   @include baseFontPropertiesWithCustomFont;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-size: 24px;
   line-height: 24px;
   color: $baseHeadingColor;
@@ -112,8 +137,21 @@
   border-radius: 3px;
   width: 124px;
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+
+  @include tablet {
+    width: 162px;
+    padding-bottom: 20px;
+    padding-top: 14px;
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 23px;
+  }
+
+  @include desktop {
+    margin-top: 16px;
+  }
 }
 
 .example__details-definition {
@@ -128,8 +166,9 @@
   margin-top: -14px;
 
   @include tablet {
-    width: auto;
+    max-width: 130px;
     background-color: #ffffff;
+    font-size: 14px;
   }
 
   @include desktop {
@@ -139,17 +178,25 @@
 
 .example__consume {
   @include baseFontPropertiesWithCustomFont;
-  margin-top: 11px;
+  margin-top: 18px;
   margin-bottom: 42px;
   font-size: $baseFontSize;
   line-height: $mediumLineHeight;
   text-transform: uppercase;
   color: $baseHeadingColor;
+  text-align: center;
 
   @include tablet {
     margin-bottom: 0;
     font-size: 20px;
     line-height: 26px;
     text-align: right;
+  }
+}
+
+.example__price {
+  @include desktop {
+    display: inline-block;
+    padding-left: 59px;
   }
 }

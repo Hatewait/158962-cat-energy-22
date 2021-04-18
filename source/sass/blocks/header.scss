@@ -1,5 +1,11 @@
+.header {
+  @include desktop {
+    padding-top: 29px;
+  }
+}
+
 .header__container {
-  padding-top: 20px;
+  padding-top: 14px;
   border-bottom: 1px solid #e6e6e6;
 
   &--main-page {
@@ -26,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 
   @include tablet {
     padding: 0;
@@ -39,12 +45,25 @@
   flex-grow: 3;
   display: flex;
   align-items: center;
+
+  @include tablet {
+    padding-top: 8px;
+  }
 }
 
 .header__logo-pic {
   margin-right: 23%;
+  width: 190px;
+  height: 42px;
 
   @include tablet {
+    width: 174px;
+    height: 51px;
     margin-right: 8%;
+  }
+
+  @include desktop {
+    width: 202px;
+    height: 59px;
   }
 }

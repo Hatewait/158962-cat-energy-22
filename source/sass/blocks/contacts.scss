@@ -5,12 +5,11 @@
 }
 
 .contacts__container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 28px;
 
   @include tablet {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding: 63px 70px 60px 70px;
     background: $baseBodyColor;
 
     &--form {
@@ -22,5 +21,6 @@
     position: relative;
     padding-top: 0;
     padding-bottom: 0;
+    padding-left: 0;
   }
 }

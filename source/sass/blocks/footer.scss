@@ -1,6 +1,10 @@
 .footer {
   padding: 40px 0 32px 0;
   background: $decorBgColor;
+
+  @include tablet {
+    padding: 54px 0 62px 0;
+  }
 }
 
 .footer__logo {

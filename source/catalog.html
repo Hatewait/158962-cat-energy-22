@@ -11,8 +11,11 @@
   <div class="header__container">
     <div class="header__group">
       <a href="index.html" class="header__logo">
-        <img class="header__logo-pic" src="img/logo-mobile-header.svg" width="33" height="37" alt="Кэт энерджи»">
-        <img class="header__logo-text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи»">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-pic" src="img/logo-mobile.svg" alt="Кэт энерджи»">
+        </picture>
       </a>
       <button class="header__toggle nav-toggle nav-toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -171,7 +174,7 @@
                       srcset="img/buckwheat-sm-desktop@1x.png 1x, img/buckwheat-sm-desktop@2x.png 2x">
               <source media="(min-width:768px)"
                       srcset="img/buckwheat-sm-tablet@1x.png 1x, img/buckwheat-sm-tablet@2x.png 2x">
-              <img src="img/buckwheat-sm-mobile@1xpng" alt="Cat Energy slim 500 г" class="product__image" srcset="img/buckwheat-sm-mobile@1xpng 1x, img/buckwheat-sm-mobile@2x.png 2x">
+              <img src="img/buckwheat-sm-mobile@1x.png" alt="Cat Energy slim 500 г" class="product__image" srcset="img/buckwheat-sm-mobile@1x.png 1x, img/buckwheat-sm-mobile@2x.png 2x">
             </picture>
 
             <div class="product__details">
@@ -336,14 +339,14 @@
     <div class="contacts__map map">
       <!--<img class="map__image" src="img/map-mob.jpg" width="320" height="362" alt="Карта компании">-->
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c304294f90e08b870cad431c6566693cd196415c8da2278ce46ace6526a9d8&amp;source=constructor"
-        width="100%" height="400"></iframe>
+        width="100%"></iframe>
     </div>
   </section>
 </main>
 <footer class="footer">
   <div class="footer__container container">
     <a class="logo-text footer__logo">
-      <img src="img/logo-text.svg" width="101" height="18" alt="Логотип компании">
+      <img src="img/logo-text.svg" width="128" height="24" alt="Логотип компании">
     </a>
 
     <ul class="footer__social  social-links">

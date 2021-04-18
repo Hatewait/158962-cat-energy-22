@@ -11,6 +11,7 @@
 
 .slider__slide {
   margin-bottom: 27px;
+  min-height: 232px;
 
   &--slim {
     display: none;
@@ -18,11 +19,16 @@
 
   @include tablet {
     display: block;
+    margin-bottom: 29px;
   }
 
   @include desktop {
     margin-bottom: 0;
   }
+}
+
+.slider__image {
+  min-height: 232px;
 }
 
 .slider__container {
@@ -32,15 +38,16 @@
   }
 
   @include desktop {
+    position: relative;
     grid-template-rows: 1fr;
     grid-template-columns: 690px;
   }
 }
 
 .slider__navigation {
-  width: 230px;
+  width: 250px;
   display: flex;
-  justify-content: space-around;
+  padding-left: 38px;
   align-items: center;
 
   @include tablet {
@@ -48,14 +55,16 @@
     grid-column: span 2;
     width: auto;
     position: absolute;
-    bottom: 50px;
+    bottom: 67px;
+    padding-left: 0;
   }
 
   @include desktop {
     width: auto;
     z-index: 1;
     position: absolute;
-    bottom: 72px;
+    bottom: 69px;
+    left: 80px;
   }
 }
 
@@ -68,6 +77,14 @@
   color: $baseHeadingColor;
   cursor: pointer;
 
+  &--before {
+    padding-right: 16px;
+  }
+
+  &--after {
+    padding-left: 16px;
+  }
+
   &:focus {
     border-color: #80bdff;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -77,6 +94,28 @@
     border-bottom: 1px dotted #cdcdcd;
     font-size: 20px;
     line-height: 30px;
+
+    &--before {
+      padding-left: 0;
+      padding-right: 16px;
+    }
+
+    &--after {
+      padding-left: 28px;
+      padding-right: 0;
+    }
+  }
+
+  @include desktop {
+    &--after {
+      padding-left: 19px;
+      padding-right: 0;
+    }
+
+    &--before {
+      padding-right: 24px;
+      padding-left: 0;
+    }
   }
 }
 
@@ -106,7 +145,7 @@
   @include tablet {
     position: absolute;
     left: 47%;
-    top: -5px;
+    top: -1px;
     border-radius: 50%;
     background-color: $baseBodyColor;
     border: 1px solid #cdcdcd;
@@ -126,6 +165,6 @@
   }
 
   @include desktop {
-    left: 51%;
+    left: 47%;
   }
 }
