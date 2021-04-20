@@ -86,9 +86,11 @@
   width: 100px;
 
   @include tablet {
+    padding: 5px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 

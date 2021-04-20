@@ -10,9 +10,18 @@
 .footer__logo {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 
   @include tablet {
     justify-self: start;
+  }
+
+  &:hover .footer__logo-pic {
+    opacity: 0.8;
+  }
+
+  &:active .footer__logo-pic {
+    opacity: 0.6;
   }
 }
 
