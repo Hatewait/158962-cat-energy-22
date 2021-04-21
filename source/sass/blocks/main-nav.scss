@@ -49,6 +49,7 @@
 
     &--mode {
       border-bottom: 2px solid $white;
+      border-top: 0;
     }
 
     &--active {
@@ -57,10 +58,6 @@
 
     &:last-child {
       margin-right: 0;
-    }
-
-    &--mode {
-      border-top: 0;
     }
   }
 }
