@@ -85,14 +85,46 @@
   display: flex;
   align-items: center;
 
+  &--email,
+  &--phone {
+    position: relative;
+  }
+
   &--radio:focus-within,
   &--checkbox:focus-within {
-    border-color: #80bdff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: $black;
+    box-shadow: 0 0 0 1px $black;
   }
 
   @include desktop {
     width: 100%;
+  }
+}
+
+.set-form__icon {
+  position: absolute;
+  right: 15px;
+
+  &--mail {
+    top: 16px;
+  }
+
+  &--phone {
+    top: 82px;
+    right: 28px;
+  }
+
+  @include tablet {
+    &--phone {
+      right: 78px;
+    }
+  }
+
+  @include desktop {
+    &--phone {
+      top: 12px;
+      right: 15px;
+    }
   }
 }
 
@@ -113,12 +145,23 @@
   height: 45px;
   padding: 13px 15px;
   border: 1px solid #e7e7e7;
+  width: 218px;
+
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+
+  &:focus {
+    border: 1px solid $baseTextColor;
+  }
+
+  &:focus + .set-form__icon {
+    fill: $green;
+  }
 
   &--radio {
-    // display: none;
-    position: absolute;
-    top: -999;
-    left: -999;
+    display: none;
 
     &:checked + label,
     &:not(:checked) + label {
@@ -166,12 +209,35 @@
       opacity: 1;
       transform: scale(1);
     }
+
+    &:checked + label:hover::before,
+    &:not(:checked) + label:hover::before {
+      border: 1px solid #bababa;
+    }
+
+    &:disabled + label::before {
+      opacity: 0.3;
+      border: 1px solid $black;
+    }
+
+    &:disabled + label:hover::before {
+      opacity: 0.3;
+      border: 1px solid $black;
+    }
+
+    &:disabled + label:hover {
+      opacity: 0.3;
+      color: $black;
+    }
+
+    &:disabled + label {
+      opacity: 0.3;
+      color: $black;
+    }
   }
 
   &--checkbox {
-    position: absolute;
-    top: -999;
-    left: -999;
+    display: none;
 
     &:checked + label,
     &:not(:checked) + label {
@@ -213,6 +279,31 @@
       opacity: 1;
       transform: scale(1);
     }
+
+    &:checked + label:hover::before,
+    &:not(:checked) + label:hover::before {
+      border: 1px solid #bababa;
+    }
+
+    &:disabled + label::before {
+      opacity: 0.3;
+      border: 1px solid $black;
+    }
+
+    &:disabled + label:hover::before {
+      opacity: 0.3;
+      border: 1px solid $black;
+    }
+
+    &:disabled + label:hover {
+      opacity: 0.3;
+      color: $black;
+    }
+
+    &:disabled + label {
+      opacity: 0.3;
+      color: $black;
+    }
   }
 
   @include tablet {
@@ -247,6 +338,14 @@
   padding: 9px 15px;
   border: 1px solid #e7e7e7;
   resize: none;
+
+  &:focus {
+    border: 2px solid $baseTextColor;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
 
   @include tablet {
     width: 100%;

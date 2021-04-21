@@ -9,6 +9,10 @@
   }
 }
 
+.copyright__logo {
+  fill: #666666;
+}
+
 .copyright__text {
   @include baseFontPropertiesWithOriginalFont;
   margin: 0;
@@ -19,5 +23,17 @@
   @include tablet {
     margin-right: 22px;
     margin-bottom: 0;
+  }
+
+  &:hover + .copyright__logo {
+    fill: $green;
+  }
+
+  &:active + .copyright__logo {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

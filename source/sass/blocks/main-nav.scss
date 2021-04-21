@@ -1,6 +1,7 @@
 .main-nav {
   display: none;
   background-color: $baseBodyColor;
+  padding-bottom: 16px;
 
   &--open {
     display: block;
@@ -33,7 +34,7 @@
 
 .main-nav__item {
   padding-top: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
 
@@ -46,12 +47,17 @@
     margin-right: 35px;
     border-bottom: 0;
 
-    &:last-child {
-      margin-right: 0;
+    &--mode {
+      border-bottom: 2px solid $white;
+      border-top: 0;
     }
 
-    &--mode {
-      border-top: 0;
+    &--active {
+      border-bottom: 2px solid $green;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

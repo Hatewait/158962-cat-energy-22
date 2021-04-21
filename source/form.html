@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-
+<svg style="display: none;">
+  <include src="/img/sprite.svg"></include>
+</svg>
 <header class="header">
   <div class="header__container">
     <div class="header__group">
@@ -29,9 +31,8 @@
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--mode"><a href="index.html" class="main-nav__link main-nav__link--mod">Главная</a>
         </li>
-        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--mod">Каталог
-          продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active main-nav__link--mod">Подбор
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--mod">Каталог продукции</a></li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link main-nav__link--active main-nav__link--mod">Подбор
           программы</a></li>
       </ul>
     </nav>
@@ -75,7 +76,7 @@
             </div>
 
             <div class="set-form__group set-form__group--radio" tabindex="0">
-              <input class="set-form__input set-form__input--radio pet-program__input" id="get-fat" type="radio" name="variant" value="get-fat">
+              <input class="set-form__input set-form__input--radio pet-program__input" id="get-fat" type="radio" name="variant" value="get-fat" disabled>
               <label class="set-form__label set-form__input--radio pet-program__label" for="get-fat">Набор массы</label>
             </div>
 
@@ -98,12 +99,18 @@
           <div class="set-form__owner-group">
             <div class="set-form__group set-form__group--email">
               <label class="set-form__label owner-data__label" for="owner-email">E-mail:*</label>
-              <input class="set-form__input owner-data__input" id="owner-email" type="email" placeholder="kuklachev@gmail.com">
+              <input class="set-form__input owner-data__input" id="owner-email" type="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="set-form__icon set-form__icon--mail" width="17" height="13">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
             </div>
 
             <div class="set-form__group set-form__group--tel">
               <label class="set-form__label owner-data__label" for="tel">Телефон:*</label>
-              <input id="tel" class="set-form__input owner-data__input" type="text" placeholder="8 (960) 900-60-90">
+              <input id="tel" class="set-form__input owner-data__input" type="text" placeholder="8 (960) 900-60-90" required>
+              <svg class="set-form__icon set-form__icon--phone" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -132,7 +139,7 @@
             </div>
 
             <div class="set-form__group set-form__group--checkbox" tabindex="0">
-              <input class="set-form__input set-form__input--checkbox addition__input" id="water" type="checkbox" name="option" value="water">
+              <input class="set-form__input set-form__input--checkbox addition__input" id="water" type="checkbox" name="option" value="water" disabled>
               <label class="set-form__label addition__label" for="water">питьевая вода</label>
             </div>
 
@@ -182,30 +189,38 @@
       <img src="img/logo-text.svg" width="128" height="24" alt="Логотип компании">
     </a>
 
-    <ul class="footer__social  social-links">
+    <ul class="footer__social social-links">
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">вконтакте</span>
-          <img src="img/vk.svg" width="23" height="13" alt="вконтакте">
+          <svg class="social-links__pic social-links--vk" width="23" height="13">
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg>
         </a>
       </li>
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">инстаграм</span>
-          <img src="img/instagram.svg" width="16" height="16" alt="инстаграм">
+          <svg class="social-links__pic social-links--instagram" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
         </a>
       </li>
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">фейсбук</span>
-          <img src="img/fb.svg" width="13" height="20" alt="фейсбук">
+          <svg class="social-links__pic social-links--fb" width="13" height="20">
+            <use xlink:href="img/sprite.svg#icon-fb"></use>
+          </svg>
         </a>
       </li>
     </ul>
 
     <a href="https://htmlacademy.ru/" class="footer__copyright copyright">
       <p class="copyright__text">HTML Academy</p>
-      <img class="copyright__logo" src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
+      <svg class="copyright__logo" width="27" height="34">
+        <use xlink:href="img/sprite.svg#icon-copyright"></use>
+      </svg>
     </a>
 
   </div>
