@@ -641,10 +641,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-  @include desktop {
-    flex-wrap: nowrap;
-  }
 }
 
 .set-form__owner {
