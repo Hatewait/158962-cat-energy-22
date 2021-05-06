@@ -1,17 +1,16 @@
 .main-nav {
-  display: none;
   background-color: $baseBodyColor;
-  padding-bottom: 16px;
 
-  &--open {
+  &--open .main-nav__list {
     display: block;
   }
 
-  &--nojs {
+  &--nojs .main-nav__list {
     display: block;
   }
 
   @include tablet {
+    padding-bottom: 16px;
     display: block;
     justify-self: end;
   }
@@ -25,6 +24,7 @@
 
 .main-nav__list {
   @include listStyleReset;
+  display: none;
 
   @include tablet {
     display: flex;
@@ -32,9 +32,39 @@
   }
 }
 
+.main-nav__toggle {
+  font-size: 0;
+  border: none;
+  position: absolute;
+  top: 21px;
+  right: 22px;
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  right: 20px;
+  background-image: url("../../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+}
+
+.main-nav--open .main-nav__toggle {
+  background-image: url("../../img/icon-close.svg");
+}
+
+
 .main-nav__item {
-  padding-top: 26px;
-  padding-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 21px;
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
 
@@ -60,12 +90,16 @@
       margin-right: 0;
     }
   }
+
+  @include desktop {
+    padding-bottom: 6px;
+  }
 }
 
 .main-nav__link {
   @include baseFontPropertiesWithCustomFont;
   text-decoration: $linkDecorReset;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 500;

@@ -1,5 +1,13 @@
 .set-form {
   margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 73px;
+  }
+
+  @include desktop {
+    margin-bottom: 82px;
+  }
 }
 
 .set-form__block {
@@ -14,11 +22,19 @@
   display: inline-block;
   max-width: 223px;
   padding: 0 20px;
-  transform: translate(-20px, 11px);
+  transform: translate(-20px, 12px);
+
+  &--owner {
+    transform: translate(-20px, 36px);
+  }
 
   @include tablet {
     max-width: 100%;
-    padding: 0 42px 0 39px;
+    padding: 0 42px 0 20px;
+
+    &--owner {
+      transform: translate(-20px, 15px);
+    }
   }
 
   @include desktop {
@@ -31,22 +47,56 @@
 .set-form__heading {
   @include baseFontPropertiesWithCustomFont;
   padding-left: calc((100% - 280px) / 2);
-
-  margin-bottom: 40px;
-  margin-top: 26px;
+  margin-bottom: 41px;
+  margin-top: 20px;
   font-size: 24px;
   line-height: 26px;
   color: $baseHeadingColor;
   border-bottom: 2px solid $darkGreen;
   transform: translateY(-13px);
 
+  &--owner {
+    margin-top: -23px;
+    margin-bottom: 59px;
+  }
+
+  &--comment {
+    margin-top: 0;
+    margin-bottom: 39px;
+  }
+
+  &--addition {
+    margin-bottom: 37px;
+    margin-top: 0;
+  }
+
   @include tablet {
     padding-left: calc((100% - 630px) / 2);
     margin-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
     text-align: left;
     font-size: $mainHeadingFontSize;
     line-height: $mainHeadingLineHeight;
+
+    &--owner {
+      margin-bottom: 74px;
+    }
+
+    &--addition {
+      margin-bottom: 61px;
+    }
+
+    @include desktop {
+      transform: translateY(-15px);
+
+      &--owner {
+        margin-bottom: 71px;
+      }
+
+      &--addition {
+        margin-bottom: 55px;
+      }
+    }
   }
 
   @include desktop {
@@ -57,10 +107,10 @@
 .set-form__pet {
   position: relative;
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   @include tablet {
-    margin-bottom: 72px;
+    margin-bottom: 43px;
   }
 
   @include desktop {
@@ -71,23 +121,51 @@
 .set-form__program {
   position: relative;
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
 
   @include tablet {
-    margin-bottom: 72px;
+    margin-bottom: 74px;
     border: 1px solid #e7e7e7;
-    padding: 30px 30px 15px 27px;
+    padding: 30px 30px 7px 27px;
+  }
+}
+
+.set-form__comment {
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 62px;
+  }
+
+  @include desktop {
+    margin-bottom: 65px;
+  }
+}
+
+.set-form__addition {
+  margin-bottom: 38px;
+
+  @include tablet {
+    margin-bottom: 15px;
+  }
+
+  @include desktop {
+    margin-bottom: 25px;
   }
 }
 
 .set-form__group {
   margin-bottom: 25px;
   display: flex;
-  align-items: center;
+  //align-items: center;
 
   &--email,
   &--phone {
     position: relative;
+  }
+
+  &--email {
+    margin-bottom: 15px;
   }
 
   &--radio:focus-within,
@@ -96,8 +174,51 @@
     box-shadow: 0 0 0 1px $black;
   }
 
+  &--pet-info {
+    margin-bottom: 13px;
+  }
+
+  &--tel {
+    margin-bottom: 21px;
+  }
+
+  @include tablet {
+    margin-bottom: 22px;
+
+    &--pet-info {
+      margin-bottom: 20px;
+    }
+
+    &--checkbox {
+      width: 50%;
+      margin-bottom: 42px;
+
+      &:nth-child(even) {
+        padding-left: 28px;
+      }
+    }
+  }
+
   @include desktop {
-    width: 100%;
+    width: auto;
+
+    &--checkbox {
+      &:nth-child(even) {
+        padding-left: 0;
+      }
+    }
+
+    &--sugar {
+      margin-right: 85px;
+    }
+
+    &--water {
+      margin-right: 117px;
+    }
+
+    &--milk {
+      margin-right: 179px;
+    }
   }
 }
 
@@ -106,35 +227,80 @@
   right: 15px;
 
   &--mail {
-    top: 16px;
+    top: 18px;
   }
 
   &--phone {
-    top: 82px;
-    right: 28px;
+    top: 73px;
+    right: 34px;
   }
 
   @include tablet {
     &--phone {
-      right: 78px;
+      right: 82px;
+      top: 89px;
     }
   }
 
   @include desktop {
+    &--mail {
+      top: 20px;
+      right: 19px;
+    }
+
     &--phone {
-      top: 12px;
-      right: 15px;
+      top: 16px;
+      right: 16px;
     }
   }
 }
 
 .set-form__label {
   @include baseFontPropertiesWithCustomFont;
-  margin-right: 12px;
+  margin-right: 11px;
   text-transform: uppercase;
   font-size: $mediumFontSize;
   line-height: $baseLineHeight;
   color: $baseTextColor;
+
+  &--email {
+    margin-right: 11px;
+    margin-top: 9px;
+  }
+
+  &--phone {
+    margin-right: 11px;
+    margin-top: 9px;
+  }
+
+  &--pet-name {
+    margin-top: 11px;
+    margin-right: 12px;
+  }
+
+  &--weight {
+    margin-top: 11px;
+    margin-right: 15px;
+  }
+
+  &--age {
+    margin-top: 11px;
+    margin-right: 14px;
+  }
+
+  @include tablet {
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--mail {
+      margin-right: 19px;
+    }
+
+    &--phone {
+      margin-right: 14px;
+    }
+  }
 
   @include desktop {
     margin-right: 20px;
@@ -142,6 +308,11 @@
 }
 
 .set-form__input {
+  @include baseFontPropertiesWithCustomFont;
+  font-size: $mediumFontSize;
+  line-height: $mediumLineHeight;
+  color: $baseTextColor;
+  text-transform: uppercase;
   height: 45px;
   padding: 13px 15px;
   border: 1px solid #e7e7e7;
@@ -166,7 +337,7 @@
     &:checked + label,
     &:not(:checked) + label {
       position: relative;
-      padding-left: 50px;
+      padding-left: 46px;
       cursor: pointer;
       display: inline-block;
       opacity: 1;
@@ -242,7 +413,7 @@
     &:checked + label,
     &:not(:checked) + label {
       position: relative;
-      padding-left: 50px;
+      padding-left: 45px;
       cursor: pointer;
       display: inline-block;
     }
@@ -306,21 +477,112 @@
     }
   }
 
+  &--pet-name {
+    width: 228px;
+  }
+
+  &--weight {
+    width: 205px;
+  }
+
+  &--age {
+    width: 172px;
+  }
+
+  &--tel {
+    width: 205px;
+  }
+
   @include tablet {
     flex-grow: 1;
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 13px 19px;
+
+    &--pet-name {
+      min-width: 567px;
+    }
+
+    &--email {
+      min-width: 551px;
+    }
+
+    &--tel {
+      min-width: 534px;
+    }
+
+    &:checked + label::before,
+    &:not(:checked) + label::before {
+      left: 1px;
+      top: -6px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &:checked + label::after,
+    &:not(:checked) + label::after {
+      top: 3px;
+      left: 12px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &:checked + label,
+    &:not(:checked) + label {
+      padding-left: 61px;
+    }
+
+    &--checkbox {
+      &:checked + label,
+      &:not(:checked) + label {
+        padding-left: 59px;
+      }
+    }
+  }
+
+  @include desktop {
+    &:checked + label::after,
+    &:not(:checked) + label::after {
+      top: 7px;
+    }
+
+    &:checked + label::before,
+    &:not(:checked) + label::before {
+      top: -3px;
+    }
+
+    &--pet-name {
+      min-width: auto;
+    }
+
+    &--email {
+      min-width: auto;
+    }
+
+    &--tel {
+      min-width: auto;
+    }
   }
 }
 
 .set-form__button {
   margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
 
   @include tablet {
-    margin-right: 61px;
+    margin-right: 62px;
     margin-bottom: 0;
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
   }
 
   @include desktop {
     width: 568px;
+    margin-right: 83px;
   }
 }
 
@@ -330,12 +592,23 @@
   font-size: $baseFontSize;
   line-height: 16px;
   color: $baseHeadingColor;
+  text-align: center;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .set-form__textarea {
+  @include baseFontPropertiesWithCustomFont;
+  font-size: $mediumFontSize;
+  line-height: $mediumLineHeight;
+  color: $baseTextColor;
+  text-transform: uppercase;
   width: 280px;
   height: 150px;
-  padding: 9px 15px;
+  padding: 0 13px;
   border: 1px solid #e7e7e7;
   resize: none;
 
@@ -349,6 +622,10 @@
 
   @include tablet {
     width: 100%;
+    height: 173px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 8px 17px;
   }
 }
 
@@ -356,12 +633,6 @@
   @include tablet {
     display: flex;
     align-items: center;
-  }
-}
-
-.set-form__addition {
-  @include tablet {
-    margin-bottom: 40px;
   }
 }
 
@@ -378,13 +649,11 @@
 
 .set-form__owner {
   @include tablet {
-    margin-bottom: 72px;
+    margin-bottom: 64px;
   }
-}
 
-.set-form__comment {
-  @include tablet {
-    margin-bottom: 72px;
+  @include desktop {
+    margin-bottom: 48px;
   }
 }
 

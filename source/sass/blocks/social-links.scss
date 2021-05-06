@@ -8,14 +8,25 @@
 
   @include tablet {
     margin: 0;
+    padding-left: 47px;
+    justify-content: flex-start;
+  }
+
+  @include desktop {
+    padding-left: 0;
+    justify-content: center;
   }
 }
 
 .social-links__item {
-  margin-right: 35px;
+  //margin-right: 35px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: 21px;
   }
 }
 

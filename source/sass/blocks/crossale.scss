@@ -1,10 +1,18 @@
 .crossale__items {
   @include listStyleReset;
   margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 68px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .crossale__item {
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 19px;
   border-top: 1px solid #cdcdcd;
 
@@ -13,15 +21,14 @@
   }
 
   @include tablet {
-    border: 1px solid $basicGrey;
-    padding: 20px 38px;
+    padding: 24px 38px 26px 38px;
   }
 
   @include desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
+    height: 73px;
     padding: 20px 0;
     border-left: 0;
     border-right: 0;
@@ -34,8 +41,8 @@
   @include baseFontPropertiesWithCustomFont;
   border-bottom: 2px solid $darkGreen;
   transform: translateY(-14px);
-  margin-top: 25px;
-  margin-bottom: 36px;
+  margin-top: 30px;
+  margin-bottom: 28px;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
@@ -43,8 +50,8 @@
 
   @include tablet {
     padding-left: calc((100% - 708px) / 2);
-    margin-top: 68px;
-    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 76px;
     text-align: left;
     font-size: $mainHeadingFontSize;
     line-height: $mainHeadingLineHeight;
@@ -52,6 +59,7 @@
 
   @include desktop {
     padding-left: calc((100% - 1220px) / 2);
+    margin-top: 75px;
   }
 }
 
@@ -63,8 +71,13 @@
   padding-right: 24px;
 
   @include tablet {
+    padding: 0 38px;
+    transform: translate(-2px, 13px);
+  }
+
+  @include desktop {
     padding: 0 40px;
-    transform: translate(-5px, 10px);
+    transform: translate(-40px, 13px);
   }
 }
 
@@ -72,13 +85,12 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 27px;
+    margin-bottom: 11px;
   }
 
   @include desktop {
     align-items: center;
     margin: 0;
-    width: 450px;
     justify-content: space-between;
   }
 }
@@ -87,13 +99,35 @@
   @include baseFontPropertiesWithCustomFont;
 
   margin-bottom: 13px;
+  margin-top: 0;
   font-size: $mediumFontSize;
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
 
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @include desktop {
     margin: 0;
+
+    &--sugar {
+      margin-right: 164px;
+    }
+
+    &--water {
+      margin-right: 198px;
+    }
+
+    &--milk {
+      margin-right: 258px;
+    }
+
+    &--vitamin {
+      margin-right: 237px;
+    }
   }
 }
 
@@ -114,6 +148,53 @@
   font-size: $baseFontSize;
   line-height: 14px;
   color: $baseTextColor;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include desktop {
+    margin-top: 8px;
+  }
+}
+
+.crossale__amount {
+  @include tablet {
+    margin-right: 49px;
+
+    &--sugar {
+      margin-top: 3px;
+    }
+
+    &--water {
+      margin-right: 59px;
+      margin-top: 3px;
+    }
+  }
+
+  @include desktop {
+    margin-right: 0;
+    margin-top: 9px;
+
+    &--sugar {
+      margin-right: 113px;
+    }
+
+    &--water {
+      margin-right: 178px;
+    }
+
+    &--milk {
+      margin-top: 8px;
+      margin-right: 196px;
+    }
+
+    &--vitamin {
+      margin-right: 119px;
+      margin-top: 7px;
+    }
+  }
 }
 
 .crossale__get-all {
@@ -148,6 +229,10 @@
     @include retina {
       background-image: url("../../img/get-all-tablet@2x.png");
     }
+
+    &::before {
+      left: 79px;
+    }
   }
 
   @include desktop {
@@ -175,6 +260,8 @@
 
   @include tablet {
     width: 161px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @include desktop {
@@ -187,10 +274,12 @@
   @include tablet {
     width: 632px;
     margin: 0 auto;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @include desktop {
-    width: 274px;
+    width: 245px;
     margin: 0;
   }
 }

@@ -16,7 +16,7 @@
     z-index: 1;
     top: 95px;
     background: $baseBodyColor;
-    padding: 30px 90px 30px 70px;
+    padding: 35px 90px 30px 76px;
   }
 }
 
@@ -32,7 +32,7 @@
   @include tablet {
     justify-self: start;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 25px;
   }
 }
 
@@ -48,7 +48,7 @@
     text-align: right;
     width: 160px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 21px;
   }
 
   @include desktop {

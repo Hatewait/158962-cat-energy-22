@@ -169,10 +169,13 @@
     max-width: 130px;
     background-color: #ffffff;
     font-size: 14px;
+    padding: 0 8px;
   }
 
   @include desktop {
     background-color: $basicGrey;
+    padding: 0 8px;
+    max-width: 146px;
   }
 }
 

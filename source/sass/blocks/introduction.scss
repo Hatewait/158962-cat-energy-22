@@ -5,11 +5,11 @@
   min-height: 302px;
   z-index: -1;
   color: #ffffff;
-  background: url("../../img/introduction-food-mobile@1x.png") 50% 72% no-repeat, url("../../img/intro-bg-mobile@1x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
+  background: url("../../img/introduction-food-mobile@1x.png") 49% 79% no-repeat, url("../../img/intro-bg-mobile@1x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
   text-align: center;
 
   @include retina {
-    background: url("../../img/introduction-food-mobile@2x.png") 50% 72% no-repeat, url("../../img/intro-bg-mobile@2x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
+    background: url("../../img/introduction-food-mobile@2x.png") 49% 79% no-repeat, url("../../img/intro-bg-mobile@2x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
     background-size: contain;
   }
 
@@ -27,14 +27,15 @@
   }
 
   @include desktop {
-    background: url("../../img/introduction-food-desktop@1x.png") 560px 140px no-repeat, url("../../img/intro-bg-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
-    height: 720px;
-    max-width: 1440px;
-    margin: -128px auto 58px auto;
+    //background: url("../../img/introduction-food-desktop@1x.png") 560px 140px no-repeat, url("../../img/intro-bg-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
+    height: 704px;
+    margin: -135px auto 82px auto;
+
+    background: url("../../img/introduction-food-desktop@1x.png") left 63% top 148px no-repeat, url("../../img/intro-bg-desktop.jpg") right -12px top 10px no-repeat, linear-gradient(to right, #ffffff 50%, #64a73d 50%, #64a73d 100%);
 
     @include retina {
-      background: url("../../img/introduction-food-desktop@2x.png") 560px 140px no-repeat, url("../../img/intro-bg-desktop@2x.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
-      background-size: 551px 505px, 719px 97%, 100px;
+      //background: url("../../img/introduction-food-desktop@2x.png") 560px 140px no-repeat, url("../../img/intro-bg-desktop@2x.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
+      background: url("../../img/introduction-food-desktop@2x.png") left 63% top 148px/559px 499px no-repeat, url("../../img/intro-bg-desktop@2x.jpg") right -12px top 10px/720px 694px no-repeat;
     }
   }
 }
@@ -77,7 +78,8 @@
   }
 
   @include desktop {
-    margin-top: 176px;
+    margin-top: 186px;
+    margin-bottom: 19px;
   }
 }
 
@@ -101,6 +103,7 @@
 
   @include desktop {
     grid-column: span 2;
+    margin-bottom: 52px;
   }
 }
 
