@@ -1,5 +1,6 @@
 .header {
   z-index: 3;
+
   @include desktop {
     padding-top: 29px;
   }
