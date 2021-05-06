@@ -1,15 +1,33 @@
 .catalog {
+  margin-bottom: 42px;
   overflow-x: hidden;
+
+  @include tablet {
+    margin-bottom: 83px;
+  }
+
+  @include desktop {
+    margin-bottom: 86px;
+  }
 }
 
 .catalog__heading {
-  margin-bottom: 71px;
+  margin-bottom: 39px;
+
+  @include tablet {
+    margin-top: 48px;
+    margin-bottom: 166px;
+  }
+
+  @include desktop {
+    margin-top: 62px;
+  }
 }
 
 .catalog__subtitle {
   @include baseFontPropertiesWithCustomFont;
   position: relative;
-  padding-top: 78px;
+  padding-top: 61px;
   margin-bottom: 8px;
   font-size: $mediumFontSize;
   line-height: $mediumLineHeight;
@@ -22,7 +40,7 @@
     width: 30px;
     height: 2px;
     background: #d3d3d3;
-    top: 28px;
+    top: 23px;
     left: 45%;
   }
 
@@ -31,25 +49,31 @@
     height: 30px;
     width: 2px;
     background: #d3d3d3;
-    top: 15px;
+    top: 8px;
     left: 50%;
   }
 
   @include tablet {
-    padding-top: 140px;
+    padding-top: 161px;
     max-width: 140px;
     margin: 0 auto 23px auto;
+    font-size: 20px;
+    line-height: 22px;
 
     &::before {
       width: 60px;
-      top: 63px;
-      left: 31%;
+      top: 83px;
+      left: 29%;
     }
 
     &::after {
       height: 60px;
-      top: 34px;
+      top: 53px;
     }
+  }
+
+  @include desktop {
+    margin: 0 auto 24px auto;
   }
 }
 
@@ -63,8 +87,10 @@
   text-align: center;
 
   @include tablet {
-    max-width: 140px;
+    max-width: 171px;
     margin: 0 auto 87px auto;
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
@@ -73,7 +99,7 @@
   margin-bottom: 25px;
 
   &--mode {
-    width: 168px;
+    width: 280px;
     margin: 0 auto;
   }
 
@@ -83,6 +109,8 @@
 
   @include desktop {
     width: 169px;
+    font-size: 16px;
+    padding: 20px 38px;
   }
 }
 
@@ -104,7 +132,7 @@
 
 .catalog__show-more {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 
   &::before {
     @include pseudoElementBaseStyles;
@@ -126,6 +154,7 @@
   }
 
   @include desktop {
+    padding-bottom: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;

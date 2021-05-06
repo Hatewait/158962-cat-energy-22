@@ -184,6 +184,11 @@
 
 .program-item__arrow {
   position: absolute;
-  right: -13px;
-  top: 7px;
+  right: 2px;
+  top: 3px;
+
+  @include desktop {
+    right: -36px;
+    top: 8px;
+  }
 }

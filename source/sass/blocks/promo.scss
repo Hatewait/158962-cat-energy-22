@@ -1,8 +1,33 @@
+.promo__heading {
+  margin-bottom: 37px;
+
+  @include tablet {
+    margin-top: 49px;
+    margin-bottom: 54px;
+  }
+
+  @include desktop {
+    margin-top: 62px;
+  }
+}
+
 .promo__description {
   @include baseFontPropertiesWithCustomFont;
   margin-bottom: 39px;
+  padding-right: 30px;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   text-transform: uppercase;
   color: $baseHeadingColor;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 241px;
+    margin-bottom: 66px;
+  }
+
+  @include desktop {
+    padding-right: 836px;
+  }
 }

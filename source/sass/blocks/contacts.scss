@@ -8,12 +8,28 @@
   padding-top: 27px;
   padding-bottom: 28px;
 
+  &--catalog {
+    padding-bottom: 18px;
+    background: $basicGrey;
+  }
+
+  &--form {
+    padding-top: 36px;
+    padding-bottom: 19px;
+  }
+
   @include tablet {
     padding: 63px 70px 60px 70px;
     background: $baseBodyColor;
 
     &--form {
       background: $decorBgColor;
+      padding: 63px 70px 57px 70px;
+    }
+
+    &--catalog {
+      padding: 53px 72px 58px 70px;
+      background: $basicGrey;
     }
   }
 
@@ -22,5 +38,9 @@
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
+
+    &--catalog {
+      background: $white;
+    }
   }
 }
