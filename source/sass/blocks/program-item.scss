@@ -12,29 +12,21 @@
     @include pseudoElementBaseStyles;
     top: 24px;
     left: 22px;
-    background-image: url("../../img/programm-slim-mobile@1x.png");
+    background-image: url("../../img/programm-slim-mobile@1x.svg");
     width: 50px;
     height: 53px;
     background-size: contain;
-
-    @include retina {
-      background-image: url("../../img/programm-slim-mobile@2x.png");
-    }
   }
 
   &--get-weight {
     padding-top: 25px;
 
     &::before {
-      background-image: url("../../img/programm-fat-mobile@1x.png");
+      background-image: url("../../img/programm-fat-mobile@1x.svg");
       width: 67px;
       height: 50px;
       top: 22px;
       left: 14px;
-
-      @include retina {
-        background-image: url("../../img/programm-fat-mobile@2x.png");
-      }
     }
   }
 
@@ -43,30 +35,22 @@
     margin-bottom: 29px;
 
     &::before {
-      background-image: url("../../img/programm-slim-tablet@1x.png");
+      background-image: url("../../img/programm-slim-tablet@1x.svg");
       right: 61px;
       left: auto;
       top: 80px;
       width: 200px;
       height: 211px;
-
-      @include retina {
-        background-image: url("../../img/programm-slim-tablet@2x.png");
-      }
     }
 
     &--get-weight {
       &::before {
-        background-image: url("../../img/programm-fat-tablet@1x.png");
+        background-image: url("../../img/programm-fat-tablet@1x.svg");
         right: 27px;
         left: auto;
         top: 89px;
         width: 268px;
         height: 200px;
-
-        @include retina {
-          background-image: url("../../img/programm-fat-tablet@2x.png");
-        }
       }
     }
   }
@@ -76,29 +60,21 @@
     padding: 77px 51px 3px 52px;
 
     &::before {
-      background-image: url("../../img/programm-slim-desktop@1x.png");
+      background-image: url("../../img/programm-slim-desktop@1x.svg");
       right: auto;
       left: 53px;
       top: 40px;
       width: 100px;
-
-      @include retina {
-        background-image: url("../../img/programm-slim-desktop@2x.png");
-      }
     }
 
     &--get-weight {
       &::before {
-        background-image: url("../../img/programm-fat-desktop@1x.png");
+        background-image: url("../../img/programm-fat-desktop@1x.svg");
         right: auto;
         left: 32px;
         top: 47px;
         width: 134px;
         height: 200px;
-
-        @include retina {
-          background-image: url("../../img/programm-fat-desktop@2x.png");
-        }
       }
     }
   }
@@ -186,6 +162,11 @@
   position: absolute;
   right: 2px;
   top: 3px;
+
+  @include tablet {
+    right: -32px;
+    top: 7px;
+  }
 
   @include desktop {
     right: -36px;

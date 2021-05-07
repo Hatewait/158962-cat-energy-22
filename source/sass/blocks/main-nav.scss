@@ -77,11 +77,6 @@
     margin-right: 35px;
     border-bottom: 0;
 
-    &--mode {
-      border-bottom: 2px solid $white;
-      border-top: 0;
-    }
-
     &--active {
       border-bottom: 2px solid $green;
     }
@@ -93,6 +88,11 @@
 
   @include desktop {
     padding-bottom: 6px;
+
+    &--mode {
+      border-bottom: 2px solid $white;
+      border-top: 0;
+    }
   }
 }
 
@@ -114,14 +114,32 @@
       color: $black;
     }
 
-    @include desktop {
-      font-size: 20px;
-      line-height: 30px;
-      color: $white;
-
-      &--mod {
-        color: $black;
-      }
+    &:hover {
+      opacity: 0.6;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+
+    &--mod {
+      color: $black;
+    }
+  }
+}
+
+.main-nav__item--mode .main-nav__link {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
