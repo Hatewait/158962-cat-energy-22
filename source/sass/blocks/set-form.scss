@@ -30,10 +30,12 @@
 
   @include tablet {
     max-width: 100%;
-    padding: 0 42px 0 20px;
+    padding: 0 42px 0 39px;
+    transform: translate(-38px, 13px);
 
     &--owner {
-      transform: translate(-20px, 15px);
+      transform: translate(-39px, 15px);
+      padding: 0 42px 0 39px;
     }
   }
 
@@ -325,6 +327,18 @@
 
   &:focus {
     border: 1px solid $baseTextColor;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:invalid + .set-form__icon {
+    fill: #ff8282;
   }
 
   &:focus + .set-form__icon {
