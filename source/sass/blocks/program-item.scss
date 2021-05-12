@@ -147,6 +147,21 @@
   text-transform: uppercase;
   color: $baseHeadingColor;
 
+  &:hover .program-item__arrow {
+    width: 36px;
+    transition: 1s;
+  }
+
+  &:active .program-item__arrow {
+    width: 36px;
+    transition: 1s;
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include tablet {
     font-size: 20px;
     line-height: 30px;
@@ -162,6 +177,11 @@
   position: absolute;
   right: 2px;
   top: 3px;
+
+  &:hover {
+    width: 36px;
+    transition: 1s;
+  }
 
   @include tablet {
     right: -32px;
