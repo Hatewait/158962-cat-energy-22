@@ -51,10 +51,9 @@
   align-items: center;
 
   @include tablet {
-    justify-self: center;
-    grid-column: span 2;
-    width: auto;
+    width: 572px;
     position: absolute;
+    left: 13%;
     bottom: 67px;
     padding-left: 0;
   }
@@ -107,7 +106,7 @@
       padding-right: 0;
       margin-right: 24px;
       padding-left: 0;
-      margin-left: 69px;
+      //margin-left: 69px;
     }
 
     &--after {
@@ -167,7 +166,7 @@
 
   @include tablet {
     position: absolute;
-    left: 53%;
+    left: 47%;
     top: 1px;
     border-radius: 50%;
     background-color: $baseBodyColor;

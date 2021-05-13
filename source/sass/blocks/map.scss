@@ -43,6 +43,7 @@
 
   @include desktop {
     background-image: url("../../img/map-desktop.jpg");
+
     &::before {
       left: 65%;
       top: 129px;
