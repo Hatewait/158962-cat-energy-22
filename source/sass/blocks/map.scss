@@ -3,6 +3,10 @@
   height: 362px;
   width: 100%;
 
+  background-image: url("../../img/map-mob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
   &::before {
     @include pseudoElementBaseStyles;
 
@@ -22,6 +26,7 @@
 
   @include tablet {
     height: 400px;
+    background-image: url("../../img/map-tablet.jpg");
 
     &::before {
       background-image: url("../../img/map-pin-tablet@1x.png");
@@ -37,6 +42,7 @@
   }
 
   @include desktop {
+    background-image: url("../../img/map-desktop.jpg");
     &::before {
       left: 65%;
       top: 129px;

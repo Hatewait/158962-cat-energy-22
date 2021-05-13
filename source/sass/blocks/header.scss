@@ -44,12 +44,11 @@
 }
 
 .header__logo {
-  // flex-grow: 3;
   display: flex;
   align-items: center;
 
   @include tablet {
-    padding-top: 8px;
+    padding-top: 11px;
   }
 
   &:hover .header__logo-pic {
@@ -58,6 +57,10 @@
 
   &:active .header__logo-pic {
     opacity: 0.6;
+  }
+
+  @include desktop {
+    padding-top: 13px;
   }
 }
 

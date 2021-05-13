@@ -12,7 +12,7 @@
 }
 
 .crossale__item {
-  padding-top: 11px;
+  padding-top: 13px;
   padding-bottom: 19px;
   border-top: 1px solid #cdcdcd;
 
@@ -22,6 +22,8 @@
 
   @include tablet {
     padding: 24px 38px 27px 38px;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
   }
 
   @include desktop {
@@ -99,7 +101,7 @@
 .crossale__subheading {
   @include baseFontPropertiesWithCustomFont;
 
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   margin-top: 0;
   font-size: $mediumFontSize;
   line-height: 16px;
@@ -224,7 +226,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 0 124px 0 0;
+    padding: 0 124px 0 423px;
     background-image: url("../../img/get-all-tablet@1x.png");
     min-height: 200px;
 
@@ -247,7 +249,7 @@
     }
 
     &::before {
-      left: 89px;
+      left: 86px;
     }
   }
 }
@@ -274,11 +276,12 @@
 }
 
 .crossale__buy {
+  font-size: 16px;
+  line-height: 20px;
+
   @include tablet {
     width: 632px;
     margin: 0 auto;
-    font-size: 16px;
-    line-height: 20px;
   }
 
   @include desktop {
