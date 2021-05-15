@@ -59,16 +59,16 @@
 
   &--owner {
     margin-top: -23px;
-    margin-bottom: 59px;
+    margin-bottom: 61px;
   }
 
   &--comment {
     margin-top: 0;
-    margin-bottom: 39px;
+    margin-bottom: 37px;
   }
 
   &--addition {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
     margin-top: 0;
   }
 
@@ -96,7 +96,7 @@
       }
 
       &--addition {
-        margin-bottom: 55px;
+        margin-bottom: 57px;
       }
     }
   }
@@ -109,7 +109,7 @@
 .set-form__pet {
   position: relative;
   padding-bottom: 10px;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 
   @include tablet {
     margin-bottom: 43px;
@@ -133,7 +133,7 @@
 }
 
 .set-form__comment {
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 
   @include tablet {
     margin-bottom: 62px;
@@ -177,7 +177,7 @@
   }
 
   &--pet-info {
-    margin-bottom: 13px;
+    margin-bottom: 14px;
   }
 
   &--tel {
@@ -267,7 +267,7 @@
 
   &--email {
     margin-right: 11px;
-    margin-top: 9px;
+    margin-top: 11px;
   }
 
   &--phone {
@@ -515,11 +515,11 @@
     padding: 13px 45px 13px 19px;
 
     &--pet-name {
-      min-width: 567px;
+      min-width: 560px;
     }
 
     &--email {
-      min-width: 551px;
+      min-width: 545px;
     }
 
     &--tel {
@@ -623,6 +623,7 @@
   width: 280px;
   height: 150px;
   padding: 0 13px;
+  padding-top: 4px;
   border: 1px solid #e7e7e7;
   resize: none;
 
@@ -639,7 +640,7 @@
     height: 173px;
     font-size: 20px;
     line-height: 30px;
-    padding: 8px 17px;
+    padding: 10px 17px;
   }
 }
 

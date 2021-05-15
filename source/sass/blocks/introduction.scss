@@ -9,14 +9,13 @@
   text-align: center;
 
   @include retina {
-    background: url("../../img/introduction-food-mobile@2x.png") 49% 79% no-repeat, url("../../img/intro-bg-mobile@2x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
-    background-size: contain;
+    background: url("../../img/introduction-food-mobile@2x.png") left 49% top 170px/280px 270px no-repeat, url("../../img/intro-bg-mobile@2x.jpg") 50% 0/320px 302px no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
   }
 
   @include tablet {
     background: url("../../img/introduction-food-tablet@1x.png") 48% 100% no-repeat;
     background-size: 709px 609px;
-    padding-top: 36px;
+    padding-top: 47px;
     padding-bottom: 527px;
     margin-bottom: 0;
 

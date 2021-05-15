@@ -6,13 +6,22 @@
   }
 
   &--nojs .main-nav__list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--nojs .main-nav__toggle {
+    display: none;
   }
 
   @include tablet {
     padding-bottom: 16px;
     display: block;
     justify-self: end;
+
+    &--nojs .main-nav__list {
+      flex-direction: row;
+    }
   }
 
   @include desktop {
@@ -63,7 +72,7 @@
 
 
 .main-nav__item {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 21px;
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
@@ -75,7 +84,7 @@
   @include tablet {
     padding-top: 42px;
     padding-bottom: 7px;
-    margin-right: 35px;
+    margin-right: 36px;
     border-bottom: 0;
 
     &--active {
@@ -89,6 +98,8 @@
 
   @include desktop {
     padding-bottom: 6px;
+    margin-left: -2px;
+
 
     &--mode {
       border-bottom: 2px solid $white;
