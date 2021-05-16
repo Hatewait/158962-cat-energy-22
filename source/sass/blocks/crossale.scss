@@ -205,11 +205,11 @@
   position: relative;
   padding: 185px 58px 43px 58px;
   min-height: 289px;
-  background-image: url("../../img/get-all-mobile@1x.png");
+  background-image: url("../img/get-all-mobile@1x.png");
   background-repeat: no-repeat;
 
   @include retina {
-    background-image: url("../../img/get-all-mobile@2x.png");
+    background-image: url("../img/get-all-mobile@2x.png");
     background-size: contain;
   }
 
@@ -227,11 +227,11 @@
     justify-content: right;
     align-items: center;
     padding: 0 124px 0 423px;
-    background-image: url("../../img/get-all-tablet@1x.png");
+    background-image: url("../img/get-all-tablet@1x.png");
     min-height: 200px;
 
     @include retina {
-      background-image: url("../../img/get-all-tablet@2x.png");
+      background-image: url("../img/get-all-tablet@2x.png");
     }
 
     &::before {
@@ -242,10 +242,10 @@
   @include desktop {
     justify-content: center;
     padding: 0;
-    background-image: url("../../img/get-all-desktop@1x.png");
+    background-image: url("../img/get-all-desktop@1x.png");
 
     @include retina {
-      background-image: url("../../img/get-all-desktop@2x.png");
+      background-image: url("../img/get-all-desktop@2x.png");
     }
 
     &::before {

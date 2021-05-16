@@ -12,7 +12,7 @@
     @include pseudoElementBaseStyles;
     top: 24px;
     left: 22px;
-    background-image: url("../../img/programm-slim-mobile@1x.svg");
+    background-image: url("../img/programm-slim-mobile@1x.svg");
     width: 50px;
     height: 53px;
     background-size: contain;
@@ -22,7 +22,7 @@
     padding-top: 27px;
 
     &::before {
-      background-image: url("../../img/programm-fat-mobile@1x.svg");
+      background-image: url("../img/programm-fat-mobile@1x.svg");
       width: 67px;
       height: 50px;
       top: 22px;
@@ -35,7 +35,7 @@
     margin-bottom: 29px;
 
     &::before {
-      background-image: url("../../img/programm-slim-tablet@1x.svg");
+      background-image: url("../img/programm-slim-tablet@1x.svg");
       right: 61px;
       left: auto;
       top: 80px;
@@ -45,7 +45,7 @@
 
     &--get-weight {
       &::before {
-        background-image: url("../../img/programm-fat-tablet@1x.svg");
+        background-image: url("../img/programm-fat-tablet@1x.svg");
         right: 27px;
         left: auto;
         top: 89px;
@@ -60,7 +60,7 @@
     padding: 77px 51px 3px 52px;
 
     &::before {
-      background-image: url("../../img/programm-slim-desktop@1x.svg");
+      background-image: url("../img/programm-slim-desktop@1x.svg");
       right: auto;
       left: 53px;
       top: 40px;
@@ -69,7 +69,7 @@
 
     &--get-weight {
       &::before {
-        background-image: url("../../img/programm-fat-desktop@1x.svg");
+        background-image: url("../img/programm-fat-desktop@1x.svg");
         right: auto;
         left: 32px;
         top: 47px;
