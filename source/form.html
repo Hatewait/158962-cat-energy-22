@@ -7,11 +7,11 @@
   <link rel="icon" href="img/favicon/favicon-16.png" sizes="16x16" type="image/png">
   <link rel="icon" href="img/favicon/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="img/favicon/favicon-152.png" sizes="152x152" type="image/png">
-  <link rel="manifest" href="assets/manifest.json">
   <title>Подбор программы</title>
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page__body">
+<body class="page-body">
 <header class="header">
   <div class="header__container">
     <div class="header__group">
@@ -24,9 +24,8 @@
       </a>
     </div>
 
-    <!--main-nav--opened  main-nav--nojs-->
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle main-nav main-nav--nojs" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
@@ -73,17 +72,17 @@
           <div class="set-form__program">
             <div class="set-form__group set-form__group--radio" tabindex="0">
               <input class="set-form__input set-form__input--radio" id="loose-weight" type="radio" name="variant" value="loose" checked>
-              <label class="set-form__label set-form__input--radio" for="loose-weight">похудение</label>
+              <label class="set-form__label set-form__label--radio" for="loose-weight">похудение</label>
             </div>
 
             <div class="set-form__group set-form__group--radio" tabindex="0">
               <input class="set-form__input set-form__input--radio" id="get-fat" type="radio" name="variant" value="get-fat">
-              <label class="set-form__label set-form__input--radio" for="get-fat">Набор массы</label>
+              <label class="set-form__label set-form__label--radio" for="get-fat">Набор массы</label>
             </div>
 
             <div class="set-form__group set-form__group--radio" tabindex="0">
               <input class="set-form__input set-form__input--radio" id="need-help" type="radio" name="variant" value="need-help">
-              <label class="set-form__label set-form__input--radio" for="need-help">Не знаю (Нужен
+              <label class="set-form__label set-form__label--radio" for="need-help">Не знаю (Нужен
                 ваш
                 совет)</label>
             </div>
@@ -167,7 +166,7 @@
   <section class="contacts contacts--form">
     <div class="contacts__container contacts__container--form container container--form">
       <div class="contacts__cooperation cooperation">
-        <h3 class="cooperation__heading">приглашаем <nobr>к сотрудничеству</nobr> дилеров!</h3>
+        <h3 class="cooperation__heading">приглашаем <span>к сотрудничеству</span> дилеров!</h3>
         <p class="cooperation__description">ул. Большая
           Конюшенная, д. 19/8
           <span class="cooperation__city">Санкт-Петербург</span></p>
@@ -177,8 +176,7 @@
     <div class="contacts__map map">
       <!--<img class="map__image" src="img/map-mob.jpg" width="320" height="362" alt="">-->
       <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c304294f90e08b870cad431c6566693cd196415c8da2278ce46ace6526a9d8&amp;source=constructor"
-        width="100%"></iframe>
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c304294f90e08b870cad431c6566693cd196415c8da2278ce46ace6526a9d8&amp;source=constructor"></iframe>
     </div>
   </section>
 </main>
@@ -193,7 +191,7 @@
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">вконтакте</span>
-          <svg class="social-links__pic social-links--vk" width="23" height="13">
+          <svg class="social-links__pic social-links__pic--vk" width="23" height="13">
             <use xlink:href="img/sprite.svg#icon-vk"></use>
           </svg>
         </a>
@@ -201,7 +199,7 @@
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">инстаграм</span>
-          <svg class="social-links__pic social-links--instagram" width="16" height="16">
+          <svg class="social-links__pic social-links__pic--instagram" width="16" height="16">
             <use xlink:href="img/sprite.svg#icon-instagram"></use>
           </svg>
         </a>
@@ -209,7 +207,7 @@
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">фейсбук</span>
-          <svg class="social-links__pic social-links--fb" width="13" height="20">
+          <svg class="social-links__pic social-links__pic--fb" width="13" height="20">
             <use xlink:href="img/sprite.svg#icon-fb"></use>
           </svg>
         </a>

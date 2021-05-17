@@ -5,22 +5,22 @@
   padding-top: 27px;
   min-height: 302px;
   color: #ffffff;
-  background: url("../../img/introduction-food-mobile@1x.png") 49% 79% no-repeat, url("../../img/intro-bg-mobile@1x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
+  background: url("../img/introduction-food-mobile@1x.png") 49% 79% no-repeat, url("../img/intro-bg-mobile@1x.jpg") 50% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
   text-align: center;
 
   @include retina {
-    background: url("../../img/introduction-food-mobile@2x.png") left 49% top 170px/280px 270px no-repeat, url("../../img/intro-bg-mobile@2x.jpg") 50% 0/320px 302px no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
+    background: url("../img/introduction-food-mobile@2x.png") left 49% top 170px/280px 270px no-repeat, url("../img/intro-bg-mobile@2x.jpg") 50% 0/320px 302px no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%);
   }
 
   @include tablet {
-    background: url("../../img/introduction-food-tablet@1x.png") 48% 100% no-repeat;
+    background: url("../img/introduction-food-tablet@1x.png") 48% 100% no-repeat;
     background-size: 709px 609px;
     padding-top: 47px;
     padding-bottom: 527px;
     margin-bottom: 0;
 
     @include retina {
-      background: url("../../img/introduction-food-tablet@2x.png") 48% 100% no-repeat;
+      background: url("../img/introduction-food-tablet@2x.png") 48% 100% no-repeat;
       background-size: 709px 609px;
     }
   }
@@ -30,11 +30,11 @@
     height: 704px;
     margin: -135px auto 82px auto;
 
-    background: url("../../img/introduction-food-desktop@1x.png") left 63% top 148px no-repeat, url("../../img/intro-bg-desktop.jpg") right -12px top 10px no-repeat, linear-gradient(to right, #ffffff 50%, #64a73d 50%, #64a73d 100%);
+    background: url("../img/introduction-food-desktop@1x.png") left 63% top 148px no-repeat, url("../img/intro-bg-desktop.jpg") right -12px top 10px no-repeat, linear-gradient(to right, #ffffff 50%, #64a73d 50%, #64a73d 100%);
 
     @include retina {
       //background: url("../../img/introduction-food-desktop@2x.png") 560px 140px no-repeat, url("../../img/intro-bg-desktop@2x.jpg") 100% 0 no-repeat, linear-gradient(to right, $baseBodyColor 100%, $green 50%) no-repeat;
-      background: url("../../img/introduction-food-desktop@2x.png") left 63% top 148px/559px 499px no-repeat, url("../../img/intro-bg-desktop@2x.jpg") right -1px top 10px/720px 694px no-repeat;
+      background: url("../img/introduction-food-desktop@2x.png") left 63% top 148px/559px 499px no-repeat, url("../img/intro-bg-desktop@2x.jpg") right -1px top 10px/720px 694px no-repeat;
     }
   }
 }

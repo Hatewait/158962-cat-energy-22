@@ -7,11 +7,11 @@
   <link rel="icon" href="img/favicon/favicon-16.png" sizes="16x16" type="image/png">
   <link rel="icon" href="img/favicon/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="img/favicon/favicon-152.png" sizes="152x152" type="image/png">
-  <link rel="manifest" href="assets/manifest.json">
   <title>Каталог продукции</title>
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page__body">
+<body class="page-body">
 <header class="header">
   <div class="header__container">
     <div class="header__group">
@@ -24,9 +24,8 @@
       </a>
     </div>
 
-    <!--main-nav--opened  main-nav--nojs-->
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle main-nav main-nav--nojs" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
@@ -351,7 +350,7 @@
             </li>
           </ul>
           <div class="crossale__get-all">
-            <p class="crossale__gift-text">Закажите все <nobr>и получите</nobr> чехол для кота в подарок!</p>
+            <p class="crossale__gift-text">Закажите все <span>и получите</span> чехол для кота в подарок!</p>
           </div>
         </div>
       </div>
@@ -360,7 +359,7 @@
   <section class="contacts">
     <div class="contacts__container contacts__container--catalog container">
       <div class="contacts__cooperation cooperation">
-        <h3 class="cooperation__heading">приглашаем <nobr>к сотрудничеству</nobr> дилеров!</h3>
+        <h3 class="cooperation__heading">приглашаем <span>к сотрудничеству</span> дилеров!</h3>
         <p class="cooperation__description">ул. Большая
           Конюшенная, д. 19/8
           <span class="cooperation__city">Санкт-Петербург</span></p>
@@ -369,8 +368,7 @@
 
     <div class="contacts__map map">
       <!--<img class="map__image" src="img/map-mob.jpg" width="320" height="362" alt="Карта компании">-->
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c304294f90e08b870cad431c6566693cd196415c8da2278ce46ace6526a9d8&amp;source=constructor"
-        width="100%"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af6c304294f90e08b870cad431c6566693cd196415c8da2278ce46ace6526a9d8&amp;source=constructor"></iframe>
     </div>
   </section>
 </main>
@@ -384,7 +382,7 @@
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">вконтакте</span>
-          <svg class="social-links__pic social-links--vk" width="23" height="13">
+          <svg class="social-links__pic social-links__pic--vk" width="23" height="13">
             <use xlink:href="img/sprite.svg#icon-vk"></use>
           </svg>
         </a>
@@ -392,7 +390,7 @@
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">инстаграм</span>
-          <svg class="social-links__pic social-links--instagram" width="16" height="16">
+          <svg class="social-links__pic social-links__pic--instagram" width="16" height="16">
             <use xlink:href="img/sprite.svg#icon-instagram"></use>
           </svg>
         </a>
@@ -400,7 +398,7 @@
       <li class="social-links__item">
         <a href="" class="social-links__link">
           <span class="visually-hidden">фейсбук</span>
-          <svg class="social-links__pic social-links--fb" width="13" height="20">
+          <svg class="social-links__pic social-links__pic--fb" width="13" height="20">
             <use xlink:href="img/sprite.svg#icon-fb"></use>
           </svg>
         </a>
